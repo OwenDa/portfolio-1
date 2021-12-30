@@ -4,25 +4,32 @@
     margin: 0;
     padding: 0;
     border: 0;
+    box-sizing: border-box;
 }
 
 body {
     font-family: Roboto, sans-serif;
     font-weight: 400;
-    font-size: 18px;
-    color:#3a3a3a;
+    color: #3a3a3a;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding: 1% 2% 0 2%;
+    font-family: Raleway, Geneva, sans-serif;
+
 }
 
 #site-name {
     float: left;
-    margin: 1% 0 0 2%;
-    /* width: 25%; */
+    line-height: 90px;
 }
 
 h1 {
-    font-family: Raleway, Geneva, sans-serif;
     font-weight: 300;
-    font-size: 275%;
+    font-size: 2.75rem;
     color: #29434e;
     line-height: 90%;
     letter-spacing: .1rem;
@@ -33,18 +40,18 @@ h1 {
 h1 span {
     letter-spacing: .4rem;
     font-weight: 200;
-    font-size: 85%;
+    font-size: 2.35rem;
 }
 
 #logo {
     height: 90px;
     width: 90px;
-    background:url('../images/whippet-silhouette-cut-coloured-compressed.png') no-repeat center center;
+    background: url('../images/whippet-silhouette-cut-coloured-compressed.png') no-repeat center center;
     background-size: contain;
     border: 2px solid #29434e;
     border-radius: 50%;
     display: inline-block;
-    margin: 1.5% 10% 0 10%;
+    line-height: 90px;
 
 }
 
@@ -55,6 +62,7 @@ a {
 nav {
     float: right;
     width: 40%;
+    line-height: 90px;
 }
 
 nav ul {
@@ -63,21 +71,48 @@ nav ul {
 
 nav li {
     float: right;
-    margin: 18% 5% 0 0;
+    margin: 0 6% 0 0;
+    padding: 0;
 }
 
 nav li a {
     color: #29434e;
-    text-transform: uppercase;
-    font-family: Raleway, Geneva, sans-serif;
     font-weight: 300;
-    font-size: 150%;
+    font-size: 1.6rem;
+}
+
+nav li:hover {
+    text-transform: uppercase;
 }
 
 .active {
     font-weight: 500;
+
 }
 
-#hero {
-    clear:both;
+hr {
+    border-top: 2vh solid #1a237e;
+    clear: both;
+}
+
+#hero-outer {
+    height: 400px;
+    width: 100%;
+    overflow: hidden;
+}
+
+#hero-image {
+    height: 500px;
+    width: 100%;
+    background: url('../images/whippet-in-front-of-sea.png') no-repeat center center;
+    background-size: cover;
+    background-position-y: 75%;
+    /* README Credit: Photo by Diana D. Reinoso from Pexels
+    Original image credit link: https://www.pexels.com/photo/black-and-white-short-coat-dog-73639/ */
+}
+
+@media screen and (min-width:1615px) {
+    #hero-image {
+        background-position-y: center;
+    }
 }
