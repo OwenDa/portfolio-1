@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color:#3a3a3a;
+}
+
+#site-name {
+    float: left;
+    margin: 1% 0 0 2%;
+    /* width: 25%; */
+}
+
+h1 {
+    font-family: Raleway, Geneva, sans-serif;
+    font-weight: 300;
+    font-size: 275%;
+    color: #29434e;
+    line-height: 90%;
+    letter-spacing: .1rem;
+    text-align: center;
+
+}
+
+h1 span {
+    letter-spacing: .4rem;
+    font-weight: 200;
+    font-size: 85%;
+}
+
+#logo {
+    height: 90px;
+    width: 90px;
+    background:url('../images/whippet-silhouette-cut-coloured-compressed.png') no-repeat center center;
+    background-size: contain;
+    border: 2px solid #29434e;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 1.5% 10% 0 10%;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+nav {
+    float: right;
+    width: 40%;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav li {
+    float: right;
+    margin: 18% 5% 0 0;
+}
+
+nav li a {
+    color: #29434e;
+    text-transform: uppercase;
+    font-family: Raleway, Geneva, sans-serif;
+    font-weight: 300;
+    font-size: 150%;
+}
+
+.active {
+    font-weight: 500;
+}
+
+#hero {
+    clear:both;
+}
