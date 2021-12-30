@@ -1,5 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600&display=swap');
 
+:root {
+    --light-grey: #819ca9;
+    --mid-grey: #546e7a;
+    --dark-grey: #29434e;
+    --light-blue: #524aac;
+    --mid-blue: #19227c;
+    --dark-blue: #00004f;
+    --bg-color: #ffffff;
+    /* mid-blue formerly #1a237e */
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -10,7 +21,8 @@
 body {
     font-family: Roboto, sans-serif;
     font-weight: 400;
-    color: #3a3a3a;
+    color: var(--dark-grey);
+    background-color: var(--bg-color);
 }
 
 header {
@@ -30,7 +42,7 @@ header {
 h1 {
     font-weight: 300;
     font-size: 2.75rem;
-    color: #29434e;
+    color: var(--dark-grey);
     line-height: 90%;
     letter-spacing: .1rem;
     text-align: center;
@@ -48,7 +60,7 @@ h1 span {
     width: 90px;
     background: url('../images/whippet-silhouette-cut-coloured-compressed.png') no-repeat center center;
     background-size: contain;
-    border: 2px solid #29434e;
+    border: 2px solid var(--dark-grey);
     border-radius: 50%;
     display: inline-block;
     line-height: 90px;
@@ -76,7 +88,7 @@ nav li {
 }
 
 nav li a {
-    color: #29434e;
+    color: var(--dark-grey);
     font-weight: 300;
     font-size: 1.6rem;
 }
@@ -91,7 +103,7 @@ nav li:hover {
 }
 
 hr {
-    border-top: 2vh solid #1a237e;
+    border-top: 2vh solid var(--mid-blue);
     clear: both;
 }
 
@@ -111,8 +123,45 @@ hr {
     Original image credit link: https://www.pexels.com/photo/black-and-white-short-coat-dog-73639/ */
 }
 
+/* MEDIA QUERIES */
+
+/* Screen Sizes */
+
 @media screen and (min-width:1615px) {
     #hero-image {
         background-position-y: center;
+    }
+}
+
+/* Dark Mode */
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --mid-grey: #7995BE;
+        --dark-grey: #DDDEDF;
+        --mid-blue: #555555;
+        --bg-color: #1e1e1e;
+    }
+
+    body {
+        color: #DDDEDF;
+    }
+
+    #logo {
+        opacity: .7;
+
+    }
+
+    nav li a {
+        color: var(--mid-grey);
+        letter-spacing: .25rem;
+    }
+
+    nav li a:active {
+        color: #839DC3;
+    }
+
+    #hero-image {
+        opacity: .6;
     }
 }
