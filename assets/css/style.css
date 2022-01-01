@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100..600&family=Roboto:wght@300..500&display=swap');
 
-/* Custom Properties (variables reassigned in 'dark mode' media query) */
+/* Custom Properties (variables reassigned below in 'dark mode' media query) */
 :root {
     --light-grey: #819ca9;
     --mid-grey: #546e7a;
@@ -10,7 +10,6 @@
     --dark-blue: #00004f;
     --bg-color: #ffffff;
     --text-on-light-blue: #29434e;
-    /* mid-blue formerly #1a237e */
 }
 
 * {
@@ -90,7 +89,7 @@ h4 {
 
 }
 
-/* TO DO: Style all <a> in <main> including :hover and :visited */
+/* TO DO: Style all <a> in <main> including :hover and :visited light/dark modes */
 header a {
     text-decoration: none;
 }
@@ -143,7 +142,7 @@ hr {
     background: url('../images/whippet-in-front-of-sea.png') no-repeat center center;
     background-size: cover;
     background-position-y: 75%;
-    /* README Credit: Photo by Diana D. Reinoso from Pexels
+    /* Credit: Photo by Diana D. Reinoso from Pexels
     Original image credit link: https://www.pexels.com/photo/black-and-white-short-coat-dog-73639/ */
 }
 
@@ -170,33 +169,20 @@ p {
     margin: 1.5% 3% 0 1.5%;
 }
 
-.card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    transition: 0.3s;
-    border-radius: 5px;
-    background-color: var(--mid-blue);
-}
-
-.card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.3);
-}
-
 #card-header {
     padding: 0;
     height: 2.5rem;
 }
 
-.container {
-    padding: 0 1.5% 0 1.5%;
+#table-1 {
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 38% 62%;
+    padding: 1rem 1.5% 0 1.5%;
     background-color: var(--light-blue);
     font-size: 1.1rem;
     color: var(--text-on-light-blue);
-}
-
-#table-1 {
-    width: 95%;
-    margin: 0 auto;
-    padding-top: 1rem;
 }
 
 #table-1>div {
@@ -209,11 +195,6 @@ p {
     text-align: left;
 }
 
-#table-1 {
-    display: grid;
-    grid-template-columns: 38% 62%;
-}
-
 /* Section: Common Misconceptions About The Breed */
 
 .myth-row {
@@ -221,22 +202,43 @@ p {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    max-width: 90vw;
+    max-width: 100vw;
     margin: 0 auto;
-    padding: 2.5% 3% 2.5% 3%
+    padding: 3% 3% 0 3%;
 }
 
-.myth-row .card {
-    margin-top: 5%;
-    margin-bottom: 5%;
-    min-width: 240px;
-    max-width: 40vw;
-    height: 300px;
+/* Card Styles */
+
+.card-effects {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+    background-color: var(--mid-blue);
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.3);
+}
+
+.card {
+    max-width: 330px;
+    min-width: 300px;
+    min-height: 400px;
+    color: var(--bg-color);
+}
+
+.card h4 {
+    padding: .5rem .75rem 0 .75rem;
+}
+
+.card p {
+    margin: .75rem .75rem .75rem .75rem;
 }
 
 .card img {
     border-radius: 5px 5px 0 0;
     width: 100%;
+    height: auto;
 }
 
 
@@ -291,5 +293,19 @@ TO DO: First Nav breakpoint determined by dark mode (letter spacing) with CONTAC
         letter-spacing: .14rem;
         font-weight: 300;
         line-height: 1.8rem;
+    }
+
+    .card img {
+        opacity: .85;
+    }
+
+    .card {
+        background-color: var(--light-blue);
+    }
+
+    .card p {
+        color: var(--text-on-light-blue);
+        letter-spacing: .02rem;
+        font-weight: 500;
     }
 }
