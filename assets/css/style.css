@@ -105,7 +105,6 @@ header {
 
 }
 
-/* TO DO: Style all <a> in <main> including :hover and :visited light/dark modes */
 header a {
     text-decoration: none;
 }
@@ -203,11 +202,11 @@ p {
     margin: 1rem 0 1rem 0;
     font-size: 1.1rem;
     line-height: 1.5rem;
-    letter-spacing: .05rem;
+    letter-spacing: .01rem;
 }
 
 #fact-file {
-    flex: 33%;
+    flex: 37%;
     min-width: 300px;
 }
 
@@ -369,9 +368,7 @@ input[type="submit"] {
 
 /* MEDIA QUERIES */
 
-/* Screen Sizes
-
-TO DO: First Nav breakpoint determined by dark mode (letter spacing) with CONTACT hovered/active: 1044px wide */
+/* Screen Sizes */
 
 @media screen and (min-width:1615px) {
     #hero-image {
@@ -394,7 +391,7 @@ TO DO: First Nav breakpoint determined by dark mode (letter spacing) with CONTAC
     }
 }
 
-@media screen and (min-width:500px) {
+@media screen and (max-width:500px) {
 
     input[type="text"],
     input[type="email"] {
