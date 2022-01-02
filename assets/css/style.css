@@ -31,9 +31,22 @@ body {
     font-style: italic;
 }
 
+a {
+    color: var(--mid-blue);
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:visited {
+    color: #421a8b;
+}
+
 h1,
 h2,
-nav a {
+nav a,
+nav a:visited {
     font-family: Raleway, Geneva, sans-serif;
     color: var(--dark-grey);
 }
@@ -248,6 +261,7 @@ p {
 
 .card h4 {
     padding: .5rem 1rem .75rem 1rem;
+    font-style: italic;
 }
 
 .card p {
