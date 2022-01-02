@@ -63,7 +63,7 @@ h3 {
 
 h4 {
     color: var(--bg-color);
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     font-weight: 400;
     letter-spacing: .1rem;
     line-height: 1.5em;
@@ -205,18 +205,6 @@ p {
     text-align: left;
 }
 
-/* Section: Common Misconceptions About The Breed */
-
-.myth-row {
-    clear: both;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    max-width: 100vw;
-    margin: 0 auto;
-    padding: 3% 3% 0 3%;
-}
-
 /* Card Styles */
 
 .card-effects {
@@ -235,21 +223,53 @@ p {
     min-width: 300px;
     min-height: 400px;
     color: var(--bg-color);
-    margin-bottom: 2.5rem;
+    margin-bottom: 1rem;
 }
 
 .card h4 {
-    padding: .5rem .75rem 0 .75rem;
+    padding: .5rem 1rem .75rem 1rem;
 }
 
 .card p {
-    margin: .75rem .75rem .75rem .75rem;
+    margin: .75rem 1rem .75rem 1rem;
+    font-size: 1.2rem;
+    position: relative;
 }
 
 .card img {
     border-radius: 5px 5px 0 0;
     width: 100%;
     height: auto;
+}
+
+/* Section: Common Misconceptions About The Breed */
+
+.myth-row {
+    clear: both;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 100vw;
+    margin: 0 auto;
+    padding: 3% 3% 0 3%;
+}
+
+.myth-row .card h4::before {
+    content: "Myth: ";
+    display: block;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    font-family: Raleway, Geneva, sans-serif;
+}
+
+.myth-row .card p::before {
+    content: "Truth: ";
+    display: block;
+    margin: 0 0 .5em 0;
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 500;
+    font-family: Raleway, Geneva, sans-serif;
 }
 
 /* FOOTER AREA */
