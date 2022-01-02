@@ -134,6 +134,7 @@ hr {
     clear: both;
 }
 
+/* Section: Hero Image & Contents */
 #hero-outer {
     height: 400px;
     width: 100%;
@@ -146,8 +147,26 @@ hr {
     background: url('../images/whippet-in-front-of-sea.png') no-repeat center center;
     background-size: cover;
     background-position-y: 75%;
+    position: relative;
     /* Credit: Photo by Diana D. Reinoso from Pexels
     Original image credit link: https://www.pexels.com/photo/black-and-white-short-coat-dog-73639/ */
+}
+
+/* Social Media Links */
+
+#social-media {
+    position: absolute;
+    right: 5%;
+    top: 5%;
+}
+
+#social-media li {
+    list-style-type: none;
+    font-size: 3rem;
+}
+
+#social-media i {
+    color: var(--dark-blue);
 }
 
 /* Section: Introduction: About & Fact File */
@@ -216,10 +235,11 @@ p {
 
 .card:hover {
     box-shadow: 0 8px 14px 0 rgba(0, 0, 0, 0.9);
+    margin-top: -1rem;
 }
 
 .card {
-    max-width: 330px;
+    max-width: 320px;
     min-width: 300px;
     min-height: 400px;
     color: var(--bg-color);
@@ -247,11 +267,12 @@ p {
 .myth-row {
     clear: both;
     display: flex;
-    justify-content: space-around;
+    justify-content:space-evenly;
     flex-wrap: wrap;
     max-width: 100vw;
     margin: 0 auto;
-    padding: 3% 3% 0 3%;
+    padding: 3% 2.5% 0 2.5%;
+    position: relative;
 }
 
 .myth-row .card h4::before {
@@ -295,7 +316,7 @@ footer {
 
 form {
     font-size: 1.2rem;
-    width: 100vw;
+    width: 100%;
     margin: 0 auto;
     padding: 0 0 1.5rem 0;
 }
