@@ -26,6 +26,10 @@ body {
     background-color: var(--bg-color);
 }
 
+.italic {
+    font-style: italic;
+}
+
 header {
     display: flex;
     justify-content: space-between;
@@ -210,14 +214,14 @@ p {
 /* Card Styles */
 
 .card-effects {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6);
     transition: 0.3s;
     border-radius: 5px;
     background-color: var(--mid-blue);
 }
 
 .card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.3);
+    box-shadow: 0 8px 14px 0 rgba(0, 0, 0, 0.9);
 }
 
 .card {
@@ -225,6 +229,7 @@ p {
     min-width: 300px;
     min-height: 400px;
     color: var(--bg-color);
+    margin-bottom: 2.5rem;
 }
 
 .card h4 {
@@ -241,6 +246,57 @@ p {
     height: auto;
 }
 
+/* FOOTER AREA */
+
+footer {
+    margin: 30px 0 3rem 0;
+    color: var(--dark-grey);
+}
+
+#sign-up {
+    background-color: var(--mid-grey);
+    color: var(--bg-color);
+    text-align: center;
+    padding: .5em 3vw 0 3vw;
+}
+
+#sign-up h2,
+#sign-up p {
+    color: var(--bg-color);
+    text-align: center;
+    padding: .5em 0 0 0;
+}
+
+form {
+    font-size: 1.2rem;
+    width: 100vw;
+    margin: 0 auto;
+    padding: 0 0 1.5rem 0;
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 400px;
+    font-size: 1.2rem;
+    margin: .5rem 0 1.4rem 0;
+    padding: .25em;
+}
+
+label {
+    display: block;
+    padding-top: .5rem;
+}
+
+input[type="submit"] {
+    font-size: 1.2rem;
+    display: block;
+    background-color: var(--dark-grey);
+    color: solid var(--bg-color);
+    border: 1px solid var(--bg-color);
+    padding: .5rem;
+    border-radius: 5%;
+    margin: 0 auto;
+}
 
 /* MEDIA QUERIES */
 
@@ -256,6 +312,14 @@ TO DO: First Nav breakpoint determined by dark mode (letter spacing) with CONTAC
     .bold {
         font-weight: 700;
         text-align: right;
+    }
+}
+
+@media screen and (min-width:500px) {
+
+    input[type="text"],
+    input[type="email"] {
+        width: 300px;
     }
 }
 
@@ -301,6 +365,12 @@ TO DO: First Nav breakpoint determined by dark mode (letter spacing) with CONTAC
 
     .card {
         background-color: var(--light-blue);
+        box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.8);
+    }
+
+    .card:hover {
+        background-color: var(--light-blue);
+        box-shadow: 0 8px 14px 0 rgba(0, 0, 0, 1);
     }
 
     .card p {
