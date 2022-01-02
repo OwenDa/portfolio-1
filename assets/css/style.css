@@ -150,12 +150,19 @@ hr {
     Original image credit link: https://www.pexels.com/photo/black-and-white-short-coat-dog-73639/ */
 }
 
-/* Section: About & Fact File */
+/* Section: Introduction: About & Fact File */
+
+#introduction {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 3vw 3vw 0 3vw;
+}
 
 #about {
-    width: 57%;
-    float: left;
-    margin: 1.5% 1.5% 0 3%;
+    flex: 57%;
+    margin-right: 2vw;
 }
 
 p {
@@ -164,13 +171,12 @@ p {
     font-size: 1.1rem;
     line-height: 1.5rem;
     letter-spacing: .05rem;
-
 }
 
 #fact-file {
-    width: 33%;
-    float: right;
-    margin: 1.5% 3% 0 1.5%;
+    flex: 33%;
+    min-width: 300px;
+    margin-left: 2vw;
 }
 
 #card-header {
