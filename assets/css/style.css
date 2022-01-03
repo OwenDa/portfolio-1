@@ -493,6 +493,14 @@ input[type="submit"] {
         color: #839DC3;
     }
 
+    .cta a {
+        color: var(--mid-grey);
+    }
+
+    .cta a:visited {
+        color: var(--light-grey);
+    }
+
     .hero-image {
         opacity: .6;
     }
