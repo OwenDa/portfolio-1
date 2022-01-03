@@ -77,4 +77,4 @@ Create a website which offers an introduction to whippets and other sighthounds,
 6. Temp  
   
 *Contact*  
-1. Temp
+1. Hero Image (whippet-in-padded-jacket.png): Photo by [S J on Unsplash](https://unsplash.com/photos/Blsz7BwY6ds).
