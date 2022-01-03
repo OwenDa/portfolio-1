@@ -148,7 +148,7 @@ hr {
 }
 
 /* Hero Image & Contents (All pages) */
-.hero-outer {
+#hero-outer {
     height: 400px;
     width: 100%;
     overflow: hidden;
