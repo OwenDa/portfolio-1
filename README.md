@@ -66,7 +66,8 @@ Create a website which offers an introduction to whippets and other sighthounds,
 3. Card Image (sleeping-whippet-by-sergio-souza.png): Photo by [Sergio Souza on Pexels](https://www.pexels.com/photo/cute-whippet-dog-sleeping-on-cozy-bed-5046656/).
 4. Card Image (whippet-on-leash.png): Photo by [Mitchell Orr on Unsplash](https://unsplash.com/photos/iEXaSu3U1po).
 5. Card Image (woman-kissing-whippet-cheek.png): Photo by [Chewy on Unsplash](https://unsplash.com/photos/sdF1Zc6-OQw).  
-6. Card Image (small-italian-greyhound.png): Photo by [@belettenoir on Pexels](https://unsplash.com/photos/Sjf4NZIYaL0).
+6. Card Image (small-italian-greyhound.png): Photo by [@belettenoir on Pexels](https://unsplash.com/photos/Sjf4NZIYaL0).  
+7. Card Image (dogs-with-cat.png): Photo by [Chewy on Unsplash](https://unsplash.com/photos/gWzTum_yMCg).
   
 *Adopt*  
 1. Temp
