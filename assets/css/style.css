@@ -199,7 +199,7 @@ hr {
     color: var(--dark-blue);
 }
 
-/* SECTION: Introduction: About & Fact File */
+/* SECTION: Introduction: About & Fact File (Homepage) */
 
 #introduction {
     display: flex;
@@ -267,7 +267,6 @@ p {
 
 .card:hover {
     box-shadow: 0 8px 14px 0 rgba(0, 0, 0, 0.9);
-    /* margin-top: -3px; */
     transform: translateY(-20px);
 }
 
@@ -307,7 +306,7 @@ p {
     position: relative;
 }
 
-/* SECTION: Common Misconceptions About The Breed */
+/* SECTION: Common Misconceptions About The Breed (Homepage) */
 
 #myths h2 {
     clear: both;
@@ -331,7 +330,13 @@ p {
     font-weight: 500;
     font-family: Raleway, Geneva, sans-serif;
 }
-
+/* SECTION: Whippets & Sighthounds (Homepage) */
+.cta, .cta a {
+    text-align: center;
+    font-size: 1.2rem;
+    text-decoration: none;
+    padding: 1rem 0 1rem 0;
+}
 /* SECTION: Adoption Cards */
 
 .shelter-details {
