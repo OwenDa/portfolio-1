@@ -63,9 +63,9 @@ Create a website which offers an introduction to whippets and other sighthounds,
 *Home Page*  
 1. Hero Image (whippet-in-front-of-sea.png): Photo by [Diana D. Reinoso from Pexels](https://www.pexels.com/photo/black-and-white-short-coat-dog-73639).  
 2. Card Image (sighthound-puppy-looking-at-camera.jpg): Photo by [Chris Arthur-Collins on Unsplash](https://unsplash.com/photos/SZ3rC3M8L0k).
-3. Homepage Card Image (sighthound-lying-on-bed.png): Photo by [Enzo Muñoz on Pexels](https://www.pexels.com/photo/cute-dog-lying-on-bed-5493600/).
-4. Homepage Card Image (whippet-on-leash.png): Photo by [Mitchell Orr on Unsplash](https://unsplash.com/photos/iEXaSu3U1po).
-5. Homepage Card Image (woman-kissing-whippet-cheek.png): Photo by [Chewy on Unsplash](https://unsplash.com/photos/sdF1Zc6-OQw).  
+3. Card Image (sleeping-whippet-by-sergio-souza.png): Photo by [Sergio Souza on Pexels](https://www.pexels.com/photo/cute-whippet-dog-sleeping-on-cozy-bed-5046656/).
+4. Card Image (whippet-on-leash.png): Photo by [Mitchell Orr on Unsplash](https://unsplash.com/photos/iEXaSu3U1po).
+5. Card Image (woman-kissing-whippet-cheek.png): Photo by [Chewy on Unsplash](https://unsplash.com/photos/sdF1Zc6-OQw).  
 6. Card Image (small-italian-greyhound.png): Photo by [@belettenoir on Pexels](https://unsplash.com/photos/Sjf4NZIYaL0).
   
 *Adopt*  
