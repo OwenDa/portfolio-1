@@ -289,9 +289,7 @@ p {
     height: auto;
 }
 
-/* SECTION: Common Misconceptions About The Breed */
-
-.myth-row {
+.card-row {
     clear: both;
     display: flex;
     justify-content: space-evenly;
@@ -302,7 +300,9 @@ p {
     position: relative;
 }
 
-.myth-row .card h4::before {
+/* SECTION: Common Misconceptions About The Breed */
+
+#myths .card h4::before {
     content: "Myth: ";
     display: block;
     text-transform: uppercase;
@@ -310,7 +310,7 @@ p {
     font-family: Raleway, Geneva, sans-serif;
 }
 
-.myth-row .card p::before {
+#myths .card p::before {
     content: "Truth: ";
     display: block;
     margin: 0 0 .5em 0;
@@ -318,6 +318,25 @@ p {
     font-size: 2rem;
     font-weight: 500;
     font-family: Raleway, Geneva, sans-serif;
+}
+
+/* SECTION: Adoption Cards */
+
+.shelter-details {
+    display: grid;
+    grid-template-rows: 88px 80px 40px 40px;
+    padding: .5rem;
+    align-items: center;
+}
+
+.shelter-details a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.shelter-details:nth-child(2) {
+    letter-spacing: .15rem;
+    padding-left: 1rem;
 }
 
 /* SECTION: Footer area */
