@@ -441,7 +441,7 @@ input[type="submit"] {
 
 /* MEDIA QUERIES */
 
-/* Screens wider than 1800px */
+/* Screens 1800px and wider */
 @media screen and (min-width:1800px) {
     main {
         padding-left: 5vw;
@@ -449,7 +449,7 @@ input[type="submit"] {
     }
 }
 
-/* Screens less than 1800px width */
+/* Screens <= 1800px width */
 @media screen and (max-width: 1800px) {
     .card-panel {
         display: grid;
@@ -458,7 +458,7 @@ input[type="submit"] {
     }
 }
 
-/* Screens wider than 1615px */
+/* Screens 1615px and wider */
 @media screen and (min-width:1615px) {
     #hero-home {
         background-position-y: center;
@@ -483,7 +483,7 @@ input[type="submit"] {
     }
 }
 
-/* Screens wider than 1000px */
+/* Screens 1000px and wider */
 @media screen and (min-width:1000px) {
     #introduction {
         max-height: 450px;
@@ -494,7 +494,7 @@ input[type="submit"] {
     }
 }
 
-/* Screens less than 970px width */
+/* Screens <= 970px width */
 @media screen and (max-width:970px) {
     .card-panel {
         display: grid;
@@ -503,7 +503,7 @@ input[type="submit"] {
     }
 }
 
-/* Screens less than than 955px wide */
+/* Screens <= 955px wide */
 @media screen and (max-width:955px) {
     nav {
         flex-basis: 100%;

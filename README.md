@@ -61,7 +61,11 @@ Create a website which offers an introduction to whippets and other sighthounds,
 1. Header Logo Image (whippet-silhouette-logo.png): Amended from [Public Domain Pictures](https://www.publicdomainpictures.net/en/view-image.php?image=74959&picture=grey-hound&large=1) image.  
   
 *Home Page*  
-1. Hero Image (whippet-in-front-of-sea.png): Photo by [Diana D. Reinoso from Pexels](https://www.pexels.com/photo/black-and-white-short-coat-dog-73639).  
+1. Hero Image (whippet-in-front-of-sea.png): Photo by [Diana D. Reinoso from Pexels](https://www.pexels.com/photo/black-and-white-short-coat-dog-73639). 
+2. Images shown on screens 1615px wide and above (from left-to-right):
+    * Photo by [Dada Mar on Unsplash](https://unsplash.com/photos/2B6b5tyWDWk).
+    * Photo by [Marius Cern on Unsplash](https://unsplash.com/photos/Im8Vnagv3r8).
+    * Photo sourced via [PickPik.com](https://www.pickpik.com/dog-whipet-hound-the-head-of-greyhound-racing-profile-green-118892).
 2. Card Image (sighthound-puppy-looking-at-camera.jpg): Photo by [Chris Arthur-Collins on Unsplash](https://unsplash.com/photos/SZ3rC3M8L0k).
 3. Card Image (sleeping-whippet-by-sergio-souza.png): Photo by [Sergio Souza on Pexels](https://www.pexels.com/photo/cute-whippet-dog-sleeping-on-cozy-bed-5046656/).
 4. Card Image (whippet-on-leash.png): Photo by [Mitchell Orr on Unsplash](https://unsplash.com/photos/iEXaSu3U1po).
