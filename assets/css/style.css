@@ -233,6 +233,8 @@ p {
 
 #table-1 {
     width: 100%;
+    min-height: 400px;
+    /* min-height must match .card min-height to avoid trailing footer */
     margin: 0 auto;
     display: grid;
     grid-template-columns: 38% 62%;
@@ -242,6 +244,7 @@ p {
     color: var(--text-on-light-blue);
 }
 
+/* Styles the individual "cells" of the table-1 grid */
 #table-1>div {
     padding: 0 .5% 1rem 0;
     text-align: left;
