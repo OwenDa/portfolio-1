@@ -61,25 +61,25 @@ Create a website which offers an introduction to whippets and other sighthounds,
 1. Header Logo Image (whippet-silhouette-logo.png): Amended from [Public Domain Pictures](https://www.publicdomainpictures.net/en/view-image.php?image=74959&picture=grey-hound&large=1) image.  
   
 *Home Page*  
-1. Hero Image (whippet-in-front-of-sea.png): Photo by [Diana D. Reinoso from Pexels](https://www.pexels.com/photo/black-and-white-short-coat-dog-73639). 
+1. Hero Image (whippet-in-front-of-sea.png): Photo by [Diana D. Reinoso - Pexels](https://www.pexels.com/photo/black-and-white-short-coat-dog-73639). 
 2. Images shown on screens 1615px wide and above (from left-to-right):
-    * Photo by [Dada Mar on Unsplash](https://unsplash.com/photos/2B6b5tyWDWk).
-    * Photo by [Marius Cern on Unsplash](https://unsplash.com/photos/Im8Vnagv3r8).
+    * Photo by [Dada Mar - Unsplash](https://unsplash.com/photos/2B6b5tyWDWk).
+    * Photo by [Marius Cern - Unsplash](https://unsplash.com/photos/Im8Vnagv3r8).
     * Photo sourced via [PickPik.com](https://www.pickpik.com/dog-whipet-hound-the-head-of-greyhound-racing-profile-green-118892).
-2. Card Image (sighthound-puppy-looking-at-camera.jpg): Photo by [Chris Arthur-Collins on Unsplash](https://unsplash.com/photos/SZ3rC3M8L0k).
-3. Card Image (sleeping-whippet-by-sergio-souza.png): Photo by [Sergio Souza on Pexels](https://www.pexels.com/photo/cute-whippet-dog-sleeping-on-cozy-bed-5046656/).
-4. Card Image (whippet-on-leash.png): Photo by [Mitchell Orr on Unsplash](https://unsplash.com/photos/iEXaSu3U1po).
-5. Card Image (woman-kissing-whippet-cheek.png): Photo by [Chewy on Unsplash](https://unsplash.com/photos/sdF1Zc6-OQw).  
-6. Card Image (small-italian-greyhound.png): Photo by [@belettenoir on Pexels](https://unsplash.com/photos/Sjf4NZIYaL0).  
-7. Card Image (dogs-with-cat.png): Photo by [Chewy on Unsplash](https://unsplash.com/photos/gWzTum_yMCg).
+2. Card Image (sleeping-whippet-by-sergio-souza.png): Photo by [Sergio Souza - Pexels](https://www.pexels.com/photo/cute-whippet-dog-sleeping-on-cozy-bed-5046656/).
+3. Card Image (small-italian-greyhound.png): Photo by [@belettenoir - Pexels](https://unsplash.com/photos/Sjf4NZIYaL0).  
+4. Card Image (whippet-on-leash.png): Photo by [Mitchell Orr - Unsplash](https://unsplash.com/photos/iEXaSu3U1po).
+5. Card Image (dogs-with-cat.png): Photo by [Chewy - Unsplash](https://unsplash.com/photos/gWzTum_yMCg).  
+6. Card Image (woman-kissing-whippet-cheek.png): Photo by [Chewy - Unsplash](https://unsplash.com/photos/sdF1Zc6-OQw).  
+7. Card Image (sighthound-puppy-looking-at-camera.jpg): Photo by [Chris Arthur-Collins - Unsplash](https://unsplash.com/photos/SZ3rC3M8L0k). 
   
 *Adopt*  
-1. Temp
-2. Temp
-3. Temp
-4. Temp
-5. Temp
-6. Temp  
+1. Card Image (adopt/whippet-close-up-portrait.png): Photo by [Mitchell Orr - Unsplash](https://unsplash.com/photos/mHeS96HeeQE).
+2. Card Image (sighthound-on-carpet.png): Photo by [Sean M. - Pexels](https://www.pexels.com/photo/carpet-dog-doggo-filter-147338/).
+3. Card Images (floppy-eared-whippet.png): Photo by [S J - Pexels](https://unsplash.com/photos/508khDxcc5I).
+4. Card Images (profile-portrait-dog.png): Photo by [Dada Mar - Unsplash](https://unsplash.com/photos/vW3TSK0KQAc).
+5. Card Image (sighthound-lying-on-bed.png): Photo by [Enzo Muñoz - Pexels](https://www.pexels.com/photo/a-brown-dog-with-blue-shirt-lying-on-the-bed-5493602/).
+6. Card Image (woodland-whippet.png): Photo by [Mitchell Orr - Unsplash](https://unsplash.com/photos/UTLouG6wK4Y).
   
 *Contact*  
 1. Hero Image (whippet-in-padded-jacket.png): Photo by [S J on Unsplash](https://unsplash.com/photos/Blsz7BwY6ds).
