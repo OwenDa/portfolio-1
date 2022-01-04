@@ -196,6 +196,10 @@ hr {
     color: var(--dark-blue);
 }
 
+#social-media i:hover {
+    color: var(--mid-blue);
+}
+
 /* SECTION: Introduction: About & Fact File (Homepage) */
 #introduction {
     display: flex;
@@ -209,8 +213,8 @@ hr {
 }
 
 #about {
-    flex: 57%;
-    margin-right: 2vw;
+    flex: 55%;
+    margin-right: 3vw;
 }
 
 p {
@@ -222,8 +226,10 @@ p {
 }
 
 #fact-file {
-    flex: 37%;
+    flex: 38%;
     min-width: 300px;
+    max-width: 360px;
+    max-height: 460px;
 }
 
 #card-header {
@@ -437,6 +443,16 @@ input[type="submit"] {
     .bold {
         font-weight: 700;
         text-align: right;
+    }
+}
+
+@media screen and (min-width:1000px) {
+    #myths .main-container {
+        padding: 0vw 3vw 0 3vw;
+    }
+
+    #introduction {
+        max-height: 450px;
     }
 }
 
