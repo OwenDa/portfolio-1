@@ -433,15 +433,41 @@ input[type="submit"] {
     margin: 0 auto;
 }
 
-/* Legal */
+/* Footer disclaimers */
 #legal {
     margin: 2rem 1rem 1rem 1rem;
     padding: 0;
 }
 
-/* MEDIA QUERIES */
+/* MEDIA QUERIES: .card-panel layouts per screen size */
 
-/* Screens 1800px and wider */
+ /* up to 2260px width */
+@media screen and (max-width: 2260px) {
+    .card-panel {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+ /* up to 1000px width */
+@media screen and (max-width: 1000px) {
+    .card-panel {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+ /* up to 700px width */
+@media screen and (max-width:700px) {
+    .card-panel {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+/* MEDIA QUERIES: General, Screen Size */
+
+ /* Screens 1800px and wider */
 @media screen and (min-width:1800px) {
     main {
         padding-left: 5vw;
@@ -449,16 +475,7 @@ input[type="submit"] {
     }
 }
 
-/* Screens <= 1800px width */
-@media screen and (max-width: 1800px) {
-    .card-panel {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-    }
-}
-
-/* Screens 1615px and wider */
+ /* Screens 1615px and wider */
 @media screen and (min-width:1615px) {
     #hero-home {
         background-position-y: center;
@@ -483,7 +500,7 @@ input[type="submit"] {
     }
 }
 
-/* Screens 1000px and wider */
+ /* Screens 1000px and wider */
 @media screen and (min-width:1000px) {
     #introduction {
         max-height: 450px;
@@ -493,17 +510,7 @@ input[type="submit"] {
         padding: 0vw 3vw 0 3vw;
     }
 }
-
-/* Screens <= 970px width */
-@media screen and (max-width:970px) {
-    .card-panel {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-    }
-}
-
-/* Screens <= 955px wide */
+ /* Screens up to 955px wide */
 @media screen and (max-width:955px) {
     nav {
         flex-basis: 100%;
@@ -513,13 +520,7 @@ input[type="submit"] {
         justify-content: center;
     }
 }
-
-@media screen and (max-width:700px) {
-    .card-panel {
-        display: grid;
-        grid-template-columns: 1fr;
-    }
-}
+ /* Screens up to 500px wide */
 @media screen and (max-width:500px) {
 
     input[type="text"],
@@ -529,7 +530,7 @@ input[type="submit"] {
     }
 }
 
-/* Dark Mode Styles */
+/* MEDIA QUERIES: Dark Mode Styles */
 @media (prefers-color-scheme: dark) {
     :root {
         --mid-grey: #7995bee8;
