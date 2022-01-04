@@ -162,19 +162,19 @@ hr {
 
 /* Hero Image: Per Page */
 #hero-home {
-    background: url('../images/whippet-in-front-of-sea.png') no-repeat center center;
+    background: url('../images/hero-images/whippet-in-front-of-sea.png') no-repeat center center;
     background-size: cover;
     background-position-y: 75%;
 }
 
 #hero-adopt {
-    background: url('../images/close-up-of-lying-sighthound-looking-directly-at-camera.jpg') no-repeat center center;
+    background: url('../images//hero-images/close-up-of-lying-sighthound-looking-directly-at-camera.jpg') no-repeat center center;
     background-size: cover;
     background-position-x: 30%;
 }
 
 #hero-contact {
-    background: url('../images/whippet-in-padded-jacket.png') no-repeat center center;
+    background: url('../images/hero-images/whippet-in-padded-jacket.png') no-repeat center center;
     background-size: cover;
     background-position-x: 48%;
     background-position-y: 32%;
