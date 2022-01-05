@@ -1,5 +1,6 @@
-# World of Whippets
+  
 
+# World of Whippets
 *World of Whippets* seeks to raise interest in, and dispell some common misconceptions about, whippets and other sighthounds as these dogs are often overlooked by would-be pet owners seeking a new companion.  
   
 ## Contents:
@@ -13,7 +14,7 @@
 ## Purpose  
 
 ### Target Audience:  
-General public.  
+General public, Ireland and elsewhere.
   
 ### Background:  
 Whippets are a dog breed which belong to the class "Sighthound". This class of dog is often used in racing and hunting (known as "coursing"), both legal and illegal. As an unfortunate side effect of their use for sport, two problems arise:  
@@ -59,7 +60,13 @@ Each page ends with a newsletter sign-up form. The inputs on this form are all k
 ### Dark Mode
    <img src="assets/images/read-me-images/side-by-side.png" alt="Side-by-side screenshots of the World of Whippets homepage in both light and dark modes, being viewed on ami.responsivedesign.is which approximates a website's appearance on some of the most common screen sizes" width="100%" height="100%">  
 
-Lower contrast styles have been coded to preserve branding and aesthetic appeal when the user's device preferences are set to "Dark Mode". For more on this, [see Accessibility below](#accessibillity).
+Lower contrast styles have been coded to preserve branding and aesthetic appeal when the user's device preferences are set to "Dark Mode". For more on this, [see Accessibility below](#accessibillity).  
+  
+### Responsive Design  
+*Overview of World of Whippets Home Page (via [ami.responsivedesign.is](http://ami.responsivedesign.is))*   
+ <img src="assets/images/read-me-images/ami-responsivedesign-light-home.png" alt="Screenshot of the World of Whippets homepage being viewed on ami.responsivedesign.is which approximates a website's appearance on some of the most common screen sizes" width="70%" height="70%">   
+   
+   World of Whippets is fully responsive. All pages and features are responsive and maintain aesthetic appeal regardless of screen size, in both light and dark mode.
 
      
 ## Validation
@@ -84,23 +91,19 @@ Lower contrast styles have been coded to preserve branding and aesthetic appeal 
   1. Manual testing was carried out to ensure all link works as intended, with external links opening in a new tab.   
   2. Functions such as form submission and form validation were manually tested by the developer and can be tested by submitting sample data.
   3. The developer manually tested to ensure elements such as navigation links, form inputs and so on can be navigated with the tab key ([see Accessibility](#accessibility)).
-  3. A [Lighthouse report](https://developers.google.com/web/tools/lighthouse) was generated for all pages, scoring each page on Performance, Accessibility, Best Practices and SEO.
-  4. Google Chrome's Dev Tools was used throughout the development process to ensure responsiveness.
-  5. The site [ami.responsivedesign.is](http://ami.responsivedesign.is) was used to generate screenshots demonstrating the site's responsiveness on common screen sizes. All pages and features are responsive and maintain aesthetic appeal regardless of screen size, in both light and dark more.
-
-  *Overview of World of Whippets Home Page (via [ami.responsivedesign.is](http://ami.responsivedesign.is))*   
- <img src="assets/images/read-me-images/ami-responsivedesign-light-home.png" alt="Screenshot of the World of Whippets homepage being viewed on ami.responsivedesign.is which approximates a website's appearance on some of the most common screen sizes" width="70%" height="70%"> 
+  4. A [Lighthouse report](https://developers.google.com/web/tools/lighthouse) was generated for all pages, scoring each page on Performance, Accessibility, Best Practices and SEO.
+  5. Google Chrome's Dev Tools was used throughout the development process to ensure responsiveness.
 
   ## Accessibility  
 
-  1. Lighthouse reports an accessability score of 100 on all pages.  
-  2. All img elements contain alt-text.
+  1. Lighthouse reports an accessability score of 100 on all pages when vied in the standard mode. In dark mode, the reduction in contrast reduces the scores for the Home and Adopt pages to 97.
+  2. All `img` elements contain alt-text.
   3. ARIA labels are used on all visual elements which operate as interactive controls, for example, social media icons.
   4. Where used, ARIA labels indicate that external links will open in a new tab.
   5. Page contents are broken into semantically meaninful sections, such as Header, Nav, Main and Footer.
   6. Navigation items, form inputs, buttons and links are all keyboard-focusable and can be navigated with the tab key.
   7. Foreground and background colours were checked to ensure adequate contrast (using [WebAIM](https://webaim.org/) and [Contrast Checker](https://coolors.co/contrast-checker)).
-  8. Dark Mode styles use lower contrasts and reduce the brightness of images, reducing eye strain and improving accessibility for users with light-sensitivity.
+  8. Dark Mode styles, however, use lower contrast colours and reduce the brightness of images, reducing eye strain and improving accessibility for users with light-sensitivity.
 
   *Overview of Adopt page in dark mode (via [ami.responsivedesign.is](http://ami.responsivedesign.is))*   
  <img src="assets/images/read-me-images/ami-responsivedesign-dark-adopt.png" alt="Screenshot of the World of Whippets Adopt page being viewed on ami.responsivedesign.is which approximates a website's appearance on some of the most common screen sizes. In this screenshot, the website's dark mode is shown." width="70%" height="70%"> 
@@ -120,8 +123,9 @@ Lower contrast styles have been coded to preserve branding and aesthetic appeal 
 3. Images were largely sourced using [Pexels](https://www.pexels.com/) and [Unsplash](https://unsplash.com/).
 4. Images were compressed using [TinyPNG](https://tinypng.com/).
 5. As will be seen within the code itself, Font Awesome was used to source icons on several pages.
-6. The [W3C Markup](https://validator.w3.org/) and CSS [Markup Validation](http://jigsaw.w3.org/css-validator/) Services were used to ensure the code within this project was valid.  
-7. Acknowledgement and thanks are due to the author's assigned mentor for guidance gratefully received.
+6. The [W3C Markup](https://validator.w3.org/) and CSS [Markup Validation](http://jigsaw.w3.org/css-validator/) Services were used to ensure the code within this project was valid.
+7. The site [ami.responsivedesign.is](http://ami.responsivedesign.is) was used to generate screenshots demonstrating the site's responsiveness on common screen sizes.  
+8. Acknowledgement and thanks are due to the author's assigned mentor for guidance gratefully received.
 
 ### Image Credits:
 *Site-wide*
@@ -141,7 +145,7 @@ Lower contrast styles have been coded to preserve branding and aesthetic appeal 
 7. Card Image (sighthound-puppy-looking-at-camera.jpg): Photo by [Chris Arthur-Collins - Unsplash](https://unsplash.com/photos/SZ3rC3M8L0k). 
   
 *Adopt*  
-1. Card Image (adopt/whippet-close-up-portrait.png): Photo by [Mitchell Orr - Unsplash](https://unsplash.com/photos/mHeS96HeeQE).
+1. Card Image (whippet-close-up-portrait.png): Photo by [Mitchell Orr - Unsplash](https://unsplash.com/photos/mHeS96HeeQE).
 2. Card Image (sighthound-on-carpet.png): Photo by [Sean M. - Pexels](https://www.pexels.com/photo/carpet-dog-doggo-filter-147338/).
 3. Card Images (floppy-eared-whippet.png): Photo by [S J - Pexels](https://unsplash.com/photos/508khDxcc5I).
 4. Card Images (profile-portrait-dog.png): Photo by [Dada Mar - Unsplash](https://unsplash.com/photos/vW3TSK0KQAc).
