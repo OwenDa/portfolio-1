@@ -431,6 +431,7 @@ input[type="submit"] {
     padding: .5rem;
     border-radius: 5%;
     margin: 0 auto;
+    cursor: pointer;
 }
 
 /* Footer disclaimers */
@@ -565,7 +566,7 @@ input[type="submit"] {
         color: var(--light-grey);
     }
 
-    .hero-image {
+    .hero-image, img {
         opacity: .6;
     }
 
