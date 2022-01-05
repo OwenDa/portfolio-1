@@ -61,15 +61,6 @@ h2 {
 }
 
 h3 {
-    font-size: 1.5rem;
-    font-weight: 400;
-    padding: .25em 0 .25em 0;
-    text-align: center;
-    letter-spacing: .25rem;
-    color: var(--bg-color);
-}
-
-h4 {
     color: var(--bg-color);
     font-size: 1.4rem;
     font-weight: 400;
@@ -244,7 +235,13 @@ p {
     max-height: 460px;
 }
 
-#card-header {
+#fact-file h3 {
+    font-size: 1.5rem;
+    padding: .25em 0 .25em 0;
+    text-align: center;
+    letter-spacing: .25rem;
+}
+#fact-header {
     padding: 0;
     height: 2.5rem;
 }
@@ -295,11 +292,6 @@ p {
     padding-bottom: .5rem;
 }
 
-.card h4 {
-    padding: .5rem 1rem .75rem 1rem;
-    font-style: italic;
-}
-
 .card p {
     margin: .75rem 1rem .75rem 1rem;
     font-size: 1.2rem;
@@ -327,7 +319,12 @@ p {
     padding: 1rem 0 1.5rem 0;
 }
 
-#myths .card h4::before {
+#myths .card h3 {
+    padding: .5rem 1rem .75rem 1rem;
+    font-style: italic;
+}
+
+#myths .card h3::before {
     content: "Myth: ";
     display: block;
     text-transform: uppercase;
@@ -358,7 +355,10 @@ p {
     display: grid;
     grid-template-rows: 88px 80px 40px 40px;
     padding: .5rem;
-    align-items: center;
+}
+
+.shetler-details h3 {
+    padding: .5rem .5rem .75 0;
 }
 
 .shelter-details a {
