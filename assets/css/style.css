@@ -247,6 +247,7 @@ p {
 }
 
 #table-1 {
+    /* Credit: Tutorial by Mark Heath used for reference: https://markheath.net/post/simple-tables-with-css-grid-layout */
     width: 100%;
     min-height: 400px;
     /* min-height must match .card min-height */
