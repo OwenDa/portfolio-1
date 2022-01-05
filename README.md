@@ -46,6 +46,7 @@ Create a website which offers an introduction to whippets and other sighthounds,
 **Code Credits:**
 1. While the World of Whippets is original material composed and coded by the author, thanks is due to [Code Institute](https://codeinstitute.net/ie/) for tutorials and lessons preceding this project.
 2. "Whippet Fact File" table composed with reference to [this tutorial by Mark Heath](https://markheath.net/post/simple-tables-with-css-grid-layout).  
+3. Favicon added by following [these steps](https://lazaroibanez.com/how-to-add-a-favicon-to-github-pages-403935604460).
 
 **Tools & Resources:**
 1. [Material Design](https://material.io/)'s [Color Tool](https://material.io/resources/color/) was used in devising the colour scheme.
@@ -53,7 +54,7 @@ Create a website which offers an introduction to whippets and other sighthounds,
 3. Images were largely sourced using [Pexels](https://www.pexels.com/) and [Unsplash](https://unsplash.com/).
 4. Images were compressed using [TinyPNG](https://tinypng.com/).
 5. As will be seen within the code itself, Font Awesome was used to source icons on several pages.
-6. The [W3C Markup](https://validator.w3.org/) and CSS [Markup Validation](http://jigsaw.w3.org/css-validator/) Services were used to ensure the code within this project was valid.
+6. The [W3C Markup](https://validator.w3.org/) and CSS [Markup Validation](http://jigsaw.w3.org/css-validator/) Services were used to ensure the code within this project was valid.  
 7. Acknowledgement and thanks are due to the author's assigned mentor for guidance gratefully received.
 
 **Image Credits:**  
