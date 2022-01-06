@@ -1,5 +1,3 @@
-  
-
 # World of Whippets
 *World of Whippets* seeks to raise interest in, and dispell some common misconceptions about, whippets and other sighthounds as these dogs are often overlooked by would-be pet owners seeking a new companion.  
   
@@ -64,10 +62,11 @@ Lower contrast styles have been coded to preserve branding and aesthetic appeal 
   
 ### Responsive Design  
 *Overview of World of Whippets Home Page (via [ami.responsivedesign.is](http://ami.responsivedesign.is))*   
- <img src="assets/images/read-me-images/ami-responsivedesign-light-home.png" alt="Screenshot of the World of Whippets homepage being viewed on ami.responsivedesign.is which approximates a website's appearance on some of the most common screen sizes" width="70%" height="70%">   
+ <img src="assets/images/read-me-images/contact-side-by-side.png" alt="Screenshot of the World of Whippets Contact page being viewed on ami.responsivedesign.is in both light and dark modes" width="100%" height="100%">   
    
-   World of Whippets is fully responsive. All pages and features are responsive and maintain aesthetic appeal regardless of screen size, in both light and dark mode.
+   World of Whippets is fully responsive. All pages and features are responsive and maintain aesthetic appeal and function regardless of screen size, in both light and dark mode. Additional imagery is displayed on the homepage for particularly large screens only.
 
+   The layout of the "card" features adapts according to screen size, displaying either as 1 row of 6 cards, 2 rows of 3 cards, 3 rows of 2 cards or 1 column of 6 cards.
      
 ## Validation
 1. [W3C](https://www.w3.org/)'s [Markup Validation Service](https://validator.w3.org/) reports the following:
@@ -115,6 +114,7 @@ Lower contrast styles have been coded to preserve branding and aesthetic appeal 
 ### Code Credits:
 1. While the World of Whippets is original material composed and coded by the author, thanks is due to [Code Institute](https://codeinstitute.net/ie/) for tutorials and lessons preceding this project.
 2. "Whippet Fact File" table composed with reference to [this tutorial by Mark Heath](https://markheath.net/post/simple-tables-with-css-grid-layout).  
+3. Card design was partly based on this [W3Schools HowTo](https://www.w3schools.com/howto/howto_css_cards.asp).
 3. Favicon added by following [these steps](https://lazaroibanez.com/how-to-add-a-favicon-to-github-pages-403935604460).
 
 ### Tools & Resources:
