@@ -129,11 +129,11 @@ Each of these steps was carried out with one individual image file initially and
 ## Acknowledgements  
 Acknowledgement and thanks are due to the author's assigned mentor for guidance gratefully received, as well as [Code Institute](https://codeinstitute.net/ie/) for tuition prior to the project inception.
 
-### Code Credits:
+### Code Credits & Resources:
 1. "Whippet Fact File" table composed with reference to [this tutorial by Mark Heath](https://markheath.net/post/simple-tables-with-css-grid-layout).  
 2. Card design was partly based on this [W3Schools HowTo](https://www.w3schools.com/howto/howto_css_cards.asp).
 3. Favicon added by following [these steps](https://lazaroibanez.com/how-to-add-a-favicon-to-github-pages-403935604460).
-4. Picture source and use of AVIF was assisted by [this brief tutorial](Credit: https://www.youtube.com/watch?v=rO6rvbN37ZA).
+4. Picture source and use of AVIF was assisted by [this brief tutorial](Credit: https://www.youtube.com/watch?v=rO6rvbN37ZA) and [this write-up](https://www.finally.agency/blog/what-is-avif-image-format).
 
 ### Tools:
 1. [Material Design](https://material.io/)'s [Color Tool](https://material.io/resources/color/) was used in devising the colour scheme.
@@ -143,6 +143,7 @@ Acknowledgement and thanks are due to the author's assigned mentor for guidance 
 5. As will be seen within the code itself, Font Awesome was used to source icons on several pages.
 6. The [W3C Markup](https://validator.w3.org/) and CSS [Markup Validation](http://jigsaw.w3.org/css-validator/) Services were used to ensure the code within this project was valid.
 7. The site [ami.responsivedesign.is](http://ami.responsivedesign.is) was used to generate screenshots demonstrating the site's responsiveness on common screen sizes.  
+8. PNG/JPG to AVIF conversion: [aconvert.com](https://www.aconvert.com/).
 
 ### Image Credits:
 *Site-wide*
