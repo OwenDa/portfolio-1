@@ -90,8 +90,12 @@ Lower contrast styles have been coded to preserve branding and aesthetic appeal 
   1. Manual testing was carried out to ensure all link works as intended, with external links opening in a new tab.   
   2. Functions such as form submission and form validation were manually tested by the developer and can be tested by submitting sample data.
   3. The developer manually tested to ensure elements such as navigation links, form inputs and so on can be navigated with the tab key ([see Accessibility](#accessibility)).
+  4. Foreground-to-background colour contrast was tested via multiple [tools](#tools).
+  4. [PingDom](https://tools.pingdom.com) was used to test results before, during and after various stages of [image optimisation](#performance).
   4. A [Lighthouse report](https://developers.google.com/web/tools/lighthouse) was generated for all pages, scoring each page on Performance, Accessibility, Best Practices and SEO.
   5. Google Chrome's Dev Tools was used throughout the development process to ensure responsiveness.
+  6. The website [Can I Use?](https://caniuse.com/?search=avif) was used to check browser support for AVIF image formats, as a result of which, fall-back formats are also provided.
+  7. Picture fall-backs were tested by opening pages in Google Chrome and inspecting the source. The expected result being that Chrome would display the AVIF file. This was then repeated in Microsoft Edge with the expection being that Edge would display the fallback PNG/JPG file. There should be no discernable difference to the end-user. The expected result was achieved in each case.
 
   ## Accessibility  
 
@@ -108,16 +112,30 @@ Lower contrast styles have been coded to preserve branding and aesthetic appeal 
  <img src="assets/images/read-me-images/ami-responsivedesign-dark-adopt.png" alt="Screenshot of the World of Whippets Adopt page being viewed on ami.responsivedesign.is which approximates a website's appearance on some of the most common screen sizes. In this screenshot, the website's dark mode is shown." width="70%" height="70%"> 
 
 
+## Performance  
+Performance testing was carried out via the tools covered in [Testing](#testing).  
+  
+### Image Optimisation  
+Images were optimised with the following workflow:  
+1. After initial placement to aid in the design process, images were reseized.
+2. Resized images were saved in PNG/JPG formats.
+3. PNG/JPG files were compressed (see [Tools](#tools)).
+4. These optimised images were then uploaded in place of the larger copies orginally used.
+5. The optimised images were also converted to AVIF format and copies uploaded accordingly.
+6. HTML was written to ensure that browsers which support AVIF display these files while browsers that do not support AVIF will use the PNG/JPG fallback instead.
 
-## Acknowledgements
+Each of these steps was carried out with one individual image file initially and the tested. The steps were then carried out folder-by-folder within the project's file structure, with git commits at each stage.
+
+## Acknowledgements  
+Acknowledgement and thanks are due to the author's assigned mentor for guidance gratefully received, as well as [Code Institute](https://codeinstitute.net/ie/) for tuition prior to the project inception.
 
 ### Code Credits:
-1. While the World of Whippets is original material composed and coded by the author, thanks is due to [Code Institute](https://codeinstitute.net/ie/) for tutorials and lessons preceding this project.
-2. "Whippet Fact File" table composed with reference to [this tutorial by Mark Heath](https://markheath.net/post/simple-tables-with-css-grid-layout).  
-3. Card design was partly based on this [W3Schools HowTo](https://www.w3schools.com/howto/howto_css_cards.asp).
+1. "Whippet Fact File" table composed with reference to [this tutorial by Mark Heath](https://markheath.net/post/simple-tables-with-css-grid-layout).  
+2. Card design was partly based on this [W3Schools HowTo](https://www.w3schools.com/howto/howto_css_cards.asp).
 3. Favicon added by following [these steps](https://lazaroibanez.com/how-to-add-a-favicon-to-github-pages-403935604460).
+4. Picture source and use of AVIF was assisted by [this brief tutorial](Credit: https://www.youtube.com/watch?v=rO6rvbN37ZA).
 
-### Tools & Resources:
+### Tools:
 1. [Material Design](https://material.io/)'s [Color Tool](https://material.io/resources/color/) was used in devising the colour scheme.
 2. Both [WebAIM](https://webaim.org/) and [Coolors.co](https://coolors.co)'s [Contrast Checker](https://coolors.co/contrast-checker) were used to compare colour contrast.
 3. Images were largely sourced using [Pexels](https://www.pexels.com/) and [Unsplash](https://unsplash.com/).
@@ -125,7 +143,6 @@ Lower contrast styles have been coded to preserve branding and aesthetic appeal 
 5. As will be seen within the code itself, Font Awesome was used to source icons on several pages.
 6. The [W3C Markup](https://validator.w3.org/) and CSS [Markup Validation](http://jigsaw.w3.org/css-validator/) Services were used to ensure the code within this project was valid.
 7. The site [ami.responsivedesign.is](http://ami.responsivedesign.is) was used to generate screenshots demonstrating the site's responsiveness on common screen sizes.  
-8. Acknowledgement and thanks are due to the author's assigned mentor for guidance gratefully received.
 
 ### Image Credits:
 *Site-wide*
