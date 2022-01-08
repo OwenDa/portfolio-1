@@ -86,30 +86,46 @@ Lower contrast styles have been coded to preserve branding and aesthetic appeal 
   *Lighthouse report summaries for each page:*   
  <img src="assets/images/read-me-images/lighthouse-summaries.png" alt="Lighthouse report summaries for all pages, showing scores of 100 in each case for Accessibility, Best Practices and SEO. Performance scores range from 95-98." width="70%" height="70%">  
     
-  
+   
   1. Manual testing was carried out to ensure all link works as intended, with external links opening in a new tab.   
   2. Functions such as form submission and form validation were manually tested by the developer and can be tested by submitting sample data.
   3. The developer manually tested to ensure elements such as navigation links, form inputs and so on can be navigated with the tab key ([see Accessibility](#accessibility)).
   4. Foreground-to-background colour contrast was tested via multiple [tools](#tools).
-  4. [PingDom](https://tools.pingdom.com) was used to test results before, during and after various stages of [image optimisation](#performance).
+  4. [PingDom](https://tools.pingdom.com) was used to test pageload speeds and pages sizes. For example, pre-[image optimisation](#performance), PingDom reported a homepage size of 9.4MB, whereas the size was reduced to 2.9MB following optimisation.
   4. A [Lighthouse report](https://developers.google.com/web/tools/lighthouse) was generated for all pages, scoring each page on Performance, Accessibility, Best Practices and SEO.
   5. Google Chrome's Dev Tools was used throughout the development process to ensure responsiveness.
   6. The website [Can I Use?](https://caniuse.com/?search=avif) was used to check browser support for AVIF image formats, as a result of which, fall-back formats are also provided.
-  7. Picture fall-backs were tested by opening pages in Google Chrome and inspecting the source. The expected result being that Chrome would display the AVIF file. This was then repeated in Microsoft Edge with the expection being that Edge would display the fallback PNG/JPG file. There should be no discernable difference to the end-user. The expected result was achieved in each case.
+  7. Picture fall-backs were tested by opening pages in Google Chrome and inspecting the source. The expected result being that Chrome would display the AVIF file. This was then repeated in Microsoft Edge with the expection being that Edge would display the fallback PNG/JPG file. There should be no discernable difference to the end-user. The expected result was achieved in each case. 
 
   ## Accessibility  
 
-  1. Lighthouse reports an accessability score of 100 on all pages when vied in the standard mode. In dark mode, the reduction in contrast reduces the scores for the Home and Adopt pages to 97.
-  2. All `img` elements contain alt-text.
-  3. ARIA labels are used on all visual elements which operate as interactive controls, for example, social media icons.
-  4. Where used, ARIA labels indicate that external links will open in a new tab.
+  ### Accessible Design Points
+
+  1. All `img` elements contain alt-text.  
+    + Purely decorative elements, namely the header images on each page, use background:url() properties instead of `img` tags; this allows screen readers to skip this decorative content and bring the reader directly to the main content of the page. `img` tags were reserved for images within the main content as these images are thematically related to the text which accompanies them. Alt-text relays a description of these images to ensure an analogous experience between users with visual impairment and users without visual impairment.
+  2. ARIA labels are used on all visual elements which operate as interactive controls, for example, social media icons which operate as links.
+  3. Input labels appear alongside and are associated with their respective fields, ensuring screen readers can correctly identify each form field and submit button.
+  4. ARIA labels indicate that external links will open in a new tab.
   5. Page contents are broken into semantically meaninful sections, such as Header, Nav, Main and Footer.
-  6. Navigation items, form inputs, buttons and links are all keyboard-focusable and can be navigated with the tab key.
-  7. Foreground and background colours were checked to ensure adequate contrast (using [WebAIM](https://webaim.org/) and [Contrast Checker](https://coolors.co/contrast-checker)).
-  8. Dark Mode styles, however, use lower contrast colours and reduce the brightness of images, reducing eye strain and improving accessibility for users with light-sensitivity.
+  6. Foreground and background colours were checked to ensure adequate contrast (using [WebAIM](https://webaim.org/) and [Contrast Checker](https://coolors.co/contrast-checker)).
+  7. Dark Mode styles, however, use lower contrast colours and reduce the brightness of images, reducing eye strain and improving accessibility for users with light-sensitivity.
+    + This deviation from design recommendations is within the user's control and is justified by the added benefits provided to users who wish to make use of Dark Mode on their devices, without cost to those who do not. It does not impact on the legibility of text or accessibility of the website for users not employing Dark Mode on their devices.
 
   *Overview of Adopt page in dark mode (via [ami.responsivedesign.is](http://ami.responsivedesign.is))*   
- <img src="assets/images/read-me-images/ami-responsivedesign-dark-adopt.png" alt="Screenshot of the World of Whippets Adopt page being viewed on ami.responsivedesign.is which approximates a website's appearance on some of the most common screen sizes. In this screenshot, the website's dark mode is shown." width="70%" height="70%"> 
+ <img src="assets/images/read-me-images/ami-responsivedesign-dark-adopt.png" alt="Screenshot of the World of Whippets Adopt page being viewed on ami.responsivedesign.is which approximates a website's appearance on some of the most common screen sizes. In this screenshot, the website's dark mode is shown." width="70%" height="70%">   
+   
+  ### Accessibility Audit
+ As part of an accessibility audit, the developer made use of assistive technology, namely [NV Access](https://www.nvaccess.org) which is a freely available screen reader. However, it should be noted that the developer is a novice user of this technology and does not regularly use assistive technology.  
+   
+The audit workflow involved: 
+  1. Navigating the website using only a screenreader.
+  2. Navigating the webstie using only the keyboard.
+  3. In addition, Google's Lighthouse tool was used to generate an accessbility report.
+
+### Audit Result
+  1. Lighthouse reports an accessability score of 100 on all pages when vied in the standard mode. In dark mode, the reduction in contrast reduces the scores for the Home and Adopt pages to 97.
+  2. Navigation items, form inputs, buttons and links can all be navigated forwards and backwards with the tab key and a focus-ring is present in each case.
+  3. The developer was able to navigate the website in full and successfully complete all user-tasks.
 
 
 ## Performance  
@@ -117,11 +133,11 @@ Performance testing was carried out via the tools covered in [Testing](#testing)
   
 ### Image Optimisation  
 Images were optimised with the following workflow:  
-1. After initial placement to aid in the design process, images were reseized.
+1. After initial placement to aid in the design process, final images were reseized.
 2. Resized images were saved in PNG/JPG formats.
 3. PNG/JPG files were compressed (see [Tools](#tools)).
 4. These optimised images were then uploaded in place of the larger copies orginally used.
-5. The optimised images were also converted to AVIF format and copies uploaded accordingly.
+5. The optimised images were also converted to AVIF format (see [Tools](#tools)) and copies uploaded accordingly.
 6. HTML was written to ensure that browsers which support AVIF display these files while browsers that do not support AVIF will use the PNG/JPG fallback instead.
 
 Each of these steps was carried out with one individual image file initially and the tested. The steps were then carried out folder-by-folder within the project's file structure, with git commits at each stage.
