@@ -532,6 +532,15 @@ input[type="submit"] {
     }
 }
 
+/* Hero Image Resizing */
+@media screen and (max-width: 768px) {
+    #hero-home {
+        background:url('../images/hero-images/768-wide/whippet-in-front-of-sea-768.png');
+        background-position-y: 90%;
+        background-position-x: 57%;
+    }
+}
+
 /* MEDIA QUERIES: Dark Mode Styles */
 @media (prefers-color-scheme: dark) {
     :root {
