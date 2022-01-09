@@ -121,12 +121,14 @@ The audit workflow involved:
   1. Navigating the website using only a screenreader.
   2. Navigating the webstie using only the keyboard.
   3. In addition, Google's Lighthouse tool was used to generate an accessbility report.
+  4. Finally, [WebAIM's WAVE tool](https://wave.webaim.org/) was used to assess the accessbility of each page and feature.
 
-### Audit Result
+### Audit Results & Revisions
   1. Lighthouse reports an accessability score of 100 on all pages when vied in the standard mode. In dark mode, the reduction in contrast reduces the scores for the Home and Adopt pages to 97.
   2. Navigation items, form inputs, buttons and links can all be navigated forwards and backwards with the tab key and a focus-ring is present in each case.
   3. The developer was able to navigate the website in full and successfully complete all user-tasks.
-
+  4. [WAVE](https://wave.webaim.org/) reported 0 Errors on each page, however, some alerts were noted and revisions were made in response.
+  5. Based on the [WAVE] report generated, the alt-text provided on several images was shortened.
 
 ## Performance  
 Performance testing was carried out via the tools covered in [Testing](#testing).  
