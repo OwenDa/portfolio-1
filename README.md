@@ -155,6 +155,8 @@ Images were optimised with the following workflow:
 
 Each of these steps was carried out with one individual image file initially and the tested. The steps were then carried out folder-by-folder within the project's file structure, with git commits at each stage.
 
+pagespeed.webdev revealed a significant dispartity between Mobile and Desktop performance (e.g. 79/100 vs 98/100 for index.html). This was corrected by further resizing images and adding additional srcset options taking screen size into account.
+
 ## Acknowledgements  
 Acknowledgement and thanks are due to the author's assigned mentor for guidance gratefully received, as well as [Code Institute](https://codeinstitute.net/ie/) for tuition prior to the project inception.
 
