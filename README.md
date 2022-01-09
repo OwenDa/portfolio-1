@@ -95,7 +95,7 @@ Lower contrast styles have been coded to preserve branding and aesthetic appeal 
    
   1. Manual testing was carried out to ensure all link works as intended, with external links opening in a new tab.   
   2. Functions such as form submission and form validation were manually tested by the developer and can be tested by submitting sample data.
-  3. The developer manually tested to ensure elements such as navigation links, form inputs and so on can be navigated with the tab key ([see Accessibility](#accessibility)).
+  3. The developer manually tested to ensure elements such as navigation links, form inputs and so on can be navigated with the tab key (for full Accessibility testing, [see Accessibility](#accessibility)).
   4. Foreground-to-background colour contrast was tested via multiple [tools](#tools).
   4. [PingDom](https://tools.pingdom.com) was used to test pageload speeds and pages sizes. For example, pre-[image optimisation](#performance), PingDom reported a homepage size of 9.4MB, whereas the size was reduced to 2.9MB following optimisation.
   4. A [Lighthouse report](https://developers.google.com/web/tools/lighthouse) was generated for all pages, scoring each page on Performance, Accessibility, Best Practices and SEO.
@@ -139,6 +139,7 @@ The audit workflow involved:
     + Justified-text was retained after considering the text density and line-height.
   5. As point of both usability and accessibility, the site can be rotated and viewed in landscape mode on mobile devices.
   6. Full stops (US: Periods) after anchor closing tags were either (example: `Google Maps</a>.</p>`) were either removed or placed inside of the anchor element (example: `Google Maps</a></p>` or `Google Maps.</a></p>`). This prevents screen readers from annoucning "Dot" after reading the associated ARIA-label.
+  7. `aria-hidden=true` was used on the `#sit-name` div to prevent unhelpful and potentially confusing repition of links and information for screen-reader users.
 
 ## Performance  
 Performance testing was carried out via the tools covered in [Testing](#testing).  

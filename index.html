@@ -17,9 +17,10 @@
 
 <body>
     <header>
-        <div id="site-name">
+        <!-- aria-hidden prevents unhelpful repition for screen reader users -->
+        <div id="site-name" aria-hidden="true">
             <a href="index.html">
-                <h1><span id="world-of">World of</span><br>Whippets</h1>
+                <h1><span id="world-of">World of </span><br>Whippets</h1>
             </a>
         </div>
 
@@ -126,8 +127,13 @@
                     <!-- CARD 1 -->
                     <div class="card-effects card">
                         <picture>
-                            <source type="image/avif" srcset="assets/images/homepage/sleeping-whippet-by-sergio-souza.avif">
-                            <source type="image/png" srcset="assets/images/homepage/sleeping-whippet-by-sergio-souza.png">
+                            <!-- XXL screens >=200px wide -->
+                            <source type="image/avif" srcset="assets/images/homepage/sleeping-whippet-by-sergio-souza.avif" media="(min-width: 2000px)">
+                            <source type="image/png" srcset="assets/images/homepage/sleeping-whippet-by-sergio-souza.png" media="(min-width: 2000px)">
+                            <!-- Screens less than 200px wide -->
+                            <source type="image/avif" srcset="assets/images/homepage/500-wide/sleeping-whippet-by-sergio-souza-500.avif">
+                            <source type="image/png" srcset="assets/images/hompeage/500-wide/sleeping-whippet-by-sergio-souza.png">
+                            <!-- img -->
                             <img src="assets/images/homepage/sleeping-whippet-by-sergio-souza.png"
                             alt="A sleeping whippet with its nose nestled in the folds of the blanket beneath.">
                         </picture>
@@ -138,8 +144,13 @@
                     <!-- CARD 2 -->
                     <div class="card-effects card">
                         <picture>
-                            <source type="image/avif" srcset="assets/images/homepage/small-italian-greyhound.avif">
-                            <source type="image/png" srcset="assets/images/homepage/small-italian-greyhound.png">
+                            <!-- XXL screens >=200px wide -->
+                            <source type="image/avif" srcset="assets/images/homepage/small-italian-greyhound.avif" media="(min-width: 2000px)">
+                            <source type="image/png" srcset="assets/images/homepage/small-italian-greyhound.png" media="(min-width: 2000px)">
+                            <!-- Screens less than 200px wide -->
+                            <source type="image/avif" srcset="assets/images/homepage/500-wide/small-italian-greyhound-500.avif">
+                            <source type="image/png" srcset="assets/images/hompeage/500-wide/small-italian-greyhound-500.png">
+                            <!-- img -->
                             <img src="assets/images/homepage/small-italian-greyhound.png"
                             alt="A woman holds small Italian Greyhound wearing a sweater; the dog is the same size as a small lapdog.">
                         </picture>
