@@ -96,8 +96,9 @@ Lower contrast styles have been coded to preserve branding and aesthetic appeal 
   1. Manual testing was carried out to ensure all link works as intended, with external links opening in a new tab.   
   2. Functions such as form submission and form validation were manually tested by the developer and can be tested by submitting sample data.
   3. The developer manually tested to ensure elements such as navigation links, form inputs and so on can be navigated with the tab key (for full Accessibility testing, [see Accessibility](#accessibility)).
-  4. Foreground-to-background colour contrast was tested via multiple [tools](#tools).
-  4. [PingDom](https://tools.pingdom.com) was used to test pageload speeds and pages sizes. For example, pre-[image optimisation](#performance), PingDom reported a homepage size of 9.4MB, whereas the size was reduced to 2.9MB following optimisation.
+  4. Foreground-to-background colour contrast was tested via multiple [contrast-checking tools](#tools).
+  4. [PingDom](https://tools.pingdom.com) was used to test pageload speeds and pages sizes. For example, pre-[image optimisation](#performance), PingDom reported a homepage size of 9.4MB, reduced to 2.9MB and finally to 1.4MB following optimisation.
+  6. [pagespeed.web.dev](https://pagespeed.web.dev/) was used for the same purpose.
   4. A [Lighthouse report](https://developers.google.com/web/tools/lighthouse) was generated for all pages, scoring each page on Performance, Accessibility, Best Practices and SEO.
   5. Google Chrome's Dev Tools was used throughout the development process to ensure responsiveness.
   6. The website [Can I Use?](https://caniuse.com/?search=avif) was used to check browser support for AVIF image formats, as a result of which, fall-back formats are also provided.
@@ -139,7 +140,7 @@ The audit workflow involved:
     + Justified-text was retained after considering the text density and line-height.
   5. As point of both usability and accessibility, the site can be rotated and viewed in landscape mode on mobile devices.
   6. Full stops (US: Periods) after anchor closing tags were either (example: `Google Maps</a>.</p>`) were either removed or placed inside of the anchor element (example: `Google Maps</a></p>` or `Google Maps.</a></p>`). This prevents screen readers from annoucning "Dot" after reading the associated ARIA-label.
-  7. `aria-hidden=true` was used on the `#sit-name` div to prevent unhelpful and potentially confusing repition of links and information for screen-reader users.
+  7. `aria-hidden=true` was used on the `#site-name` div to prevent unhelpful and potentially confusing repition of links and information for screen-reader users. The reduces the Lighthouse accessibility score, however, it is more than justified by the real-world increase in accessibility.
 
 ## Performance  
 Performance testing was carried out via the tools covered in [Testing](#testing).  
@@ -148,23 +149,23 @@ Performance testing was carried out via the tools covered in [Testing](#testing)
 Images were optimised with the following workflow:  
 1. After initial placement to aid in the design process, final images were reseized.
 2. Resized images were saved in PNG/JPG formats.
-3. PNG/JPG files were compressed (see [Tools](#tools)).
+3. PNG/JPG files were compressed ([see Tools](#tools)).
 4. These optimised images were then uploaded in place of the larger copies orginally used.
-5. The optimised images were also converted to AVIF format (see [Tools](#tools)) and copies uploaded accordingly.
+5. The optimised images were also converted to AVIF format ([see Tools](#tools)) and copies uploaded accordingly.
 6. HTML was written to ensure that browsers which support AVIF display these files while browsers that do not support AVIF will use the PNG/JPG fallback instead.
 
 Each of these steps was carried out with one individual image file initially and the tested. The steps were then carried out folder-by-folder within the project's file structure, with git commits at each stage.
 
-pagespeed.webdev revealed a significant dispartity between Mobile and Desktop performance (e.g. 79/100 vs 98/100 for index.html). This was corrected by further resizing images and adding additional srcset options taking screen size into account.
+[pagespeed.web.dev](https://pagespeed.web.dev) revealed a significant dispartity between Mobile and Desktop performance (e.g. 79/100 vs 98/100 for index.html). This was partially corrected by adding further srcset options taking screen size into account. The developer was unable to follow all recommendations to improve performance due to the deployment environment, as per this [Stack Exchange discussion on GitHub cache policies](https://webapps.stackexchange.com/questions/119286/caching-assets-in-website-served-from-github-pages).
 
 ## Acknowledgements  
 Acknowledgement and thanks are due to the author's assigned mentor for guidance gratefully received, as well as [Code Institute](https://codeinstitute.net/ie/) for tuition prior to the project inception.
 
 ### Code Credits & Resources:
-1. "Whippet Fact File" table composed with reference to [this tutorial by Mark Heath](https://markheath.net/post/simple-tables-with-css-grid-layout).  
-2. Card design was partly based on this [W3Schools HowTo](https://www.w3schools.com/howto/howto_css_cards.asp).
+1. "Whippet Fact File" table composed with reference to this [CSS Grid tutorial by Mark Heath](https://markheath.net/post/simple-tables-with-css-grid-layout).  
+2. Card design was partly based on this [W3Schools CSS Cards How-To](https://www.w3schools.com/howto/howto_css_cards.asp).
 3. Favicon added by following [these steps](https://lazaroibanez.com/how-to-add-a-favicon-to-github-pages-403935604460).
-4. Picture source and use of AVIF was assisted by [this brief tutorial](Credit: https://www.youtube.com/watch?v=rO6rvbN37ZA) and [this write-up](https://www.finally.agency/blog/what-is-avif-image-format).
+4. Picture source and use of AVIF was assisted by this [picture element video tutorial](https://www.youtube.com/watch?v=rO6rvbN37ZA) and this [write-up on AVIF format](https://www.finally.agency/blog/what-is-avif-image-format).
 
 ### Tools:
 1. [Material Design](https://material.io/)'s [Color Tool](https://material.io/resources/color/) was used in devising the colour scheme.
