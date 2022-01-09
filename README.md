@@ -4,6 +4,12 @@
 ## Contents:
 + [Purpose](#purpose)
 + [Features](#features)
+  - [Navigation](#navigation)
+  - [Information Presentation](#information-presentation)
+  - [Adopt Page](#adopt-page)
+  - [Forms](#forms)
+  - [Dark Mode](#dark-mode)
+  - [Responsive Design](#responsive-design)
 + [Validation](#validation)
 + [Testing](#testing)
 + [Accessbility](#accessibility)
@@ -120,15 +126,19 @@ Lower contrast styles have been coded to preserve branding and aesthetic appeal 
 The audit workflow involved: 
   1. Navigating the website using only a screenreader.
   2. Navigating the webstie using only the keyboard.
+  3. [TopTal's Color Blind Webpage Filter](https://www.toptal.com/designers/colorfilter) was used to ensure the site remains perceivable and operable for all users, regardless of colour blindness.
   3. In addition, Google's Lighthouse tool was used to generate an accessbility report.
   4. Finally, [WebAIM's WAVE tool](https://wave.webaim.org/) was used to assess the accessbility of each page and feature.
 
-### Audit Results & Revisions
+### Audit Outcomes   
   1. Lighthouse reports an accessability score of 100 on all pages when vied in the standard mode. In dark mode, the reduction in contrast reduces the scores for the Home and Adopt pages to 97.
   2. Navigation items, form inputs, buttons and links can all be navigated forwards and backwards with the tab key and a focus-ring is present in each case.
   3. The developer was able to navigate the website in full and successfully complete all user-tasks.
-  4. [WAVE](https://wave.webaim.org/) reported 0 Errors on each page, however, some alerts were noted and revisions were made in response.
-  5. Based on the [WAVE] report generated, the alt-text provided on several images was shortened.
+  4. [WAVE](https://wave.webaim.org/) reported 0 Errors on each page, however, some alerts were noted and the following revisions were made in response:
+    + Based on the [WAVE] report generated, the alt-text provided on several images was shortened.
+    + Justified-text was retained after considering the text density and line-height.
+  5. As point of both usability and accessibility, the site can be rotated and viewed in landscape mode on mobile devices.
+  6. Full stops (US: Periods) after anchor closing tags were either (example: `Google Maps</a>.</p>`) were either removed or placed inside of the anchor element (example: `Google Maps</a></p>` or `Google Maps.</a></p>`). This prevents screen readers from annoucning "Dot" after reading the associated ARIA-label.
 
 ## Performance  
 Performance testing was carried out via the tools covered in [Testing](#testing).  
