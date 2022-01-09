@@ -2,18 +2,19 @@
 *World of Whippets* seeks to raise interest in, and dispell some common misconceptions about, whippets and other sighthounds as these dogs are often overlooked by would-be pet owners seeking a new companion.  
   
 ## Contents:
-+ [Purpose](#purpose)
-+ [Features](#features)
-  - [Navigation](#navigation)
-  - [Information Presentation](#information-presentation)
-  - [Adopt Page](#adopt-page)
-  - [Forms](#forms)
-  - [Dark Mode](#dark-mode)
-  - [Responsive Design](#responsive-design)
-+ [Validation](#validation)
-+ [Testing](#testing)
-+ [Accessbility](#accessibility)
-+ [Acknowledgements](#acknowledgements)
+1. [Purpose](#purpose)
+2. [Features](#features)
+  + [Navigation](#navigation)
+  + [Information Presentation](#information-presentation)
+  + [Adopt Page](#adopt-page)
+  + [Forms](#forms)
+  + [Dark Mode](#dark-mode)
+  + [Responsive Design](#responsive-design)
+3. [Validation](#validation)
+4. [Testing](#testing)
+5. [Accessbility](#accessibility)
+6. [Deployment](#deployment)
+7. [Acknowledgements](#acknowledgements)
 
 ## Purpose  
 
@@ -156,7 +157,15 @@ Images were optimised with the following workflow:
 
 Each of these steps was carried out with one individual image file initially and the tested. The steps were then carried out folder-by-folder within the project's file structure, with git commits at each stage.
 
-[pagespeed.web.dev](https://pagespeed.web.dev) revealed a significant dispartity between Mobile and Desktop performance (e.g. 79/100 vs 98/100 for index.html). This was partially corrected by adding further srcset options taking screen size into account. The developer was unable to follow all recommendations to improve performance due to the deployment environment, as per this [Stack Exchange discussion on GitHub cache policies](https://webapps.stackexchange.com/questions/119286/caching-assets-in-website-served-from-github-pages).
+[pagespeed.web.dev](https://pagespeed.web.dev) revealed a significant dispartity between Mobile and Desktop performance (e.g. 79/100 vs 98/100 for index.html). This was partially corrected by adding further srcset options taking screen size into account. The developer was unable to follow all recommendations to improve performance due to the deployment environment, as per this [Stack Exchange discussion on GitHub cache policies](https://webapps.stackexchange.com/questions/119286/caching-assets-in-website-served-from-github-pages).  
+  
+## Deployment
+The site was deployed to GitHub pages using the following procedue:
+1. Select the repository within the developer's GitHub account (previously set to public)
+2. Select "Settings".
+3. Navigate to the "Pages" section within "Settings".
+4. Under the heading "Source", select "Branch:main" (set to "None" by default).
+5. Deploy page to GitHub pages (note: there may a delay of several minutes before a site can be viewed at the link then provided by GitHub)
 
 ## Acknowledgements  
 Acknowledgement and thanks are due to the author's assigned mentor for guidance gratefully received, as well as [Code Institute](https://codeinstitute.net/ie/) for tuition prior to the project inception.
