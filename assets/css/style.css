@@ -75,7 +75,7 @@ header {
     flex-wrap: wrap;
     justify-content: space-between;
     align-content: center;
-    padding: 1% 2% 0 2%;
+    padding: .64rem 1.3rem 0 1.3rem;
 }
 
 #site-name {
@@ -254,7 +254,7 @@ p {
     margin: 0 auto;
     display: grid;
     grid-template-columns: 38% 62%;
-    padding: 1rem 1.5% 0 1.5%;
+    padding: 1rem .33rem 0 .33rem;
     background-color: var(--light-blue);
     font-size: 1.1rem;
     color: var(--text-on-light-blue);
@@ -262,7 +262,7 @@ p {
 
 /* Styles the individual "cells" of the table-1 grid */
 #table-1>div {
-    padding: 0 .5% 1rem 0;
+    padding: 0 .7rem .7rem 0;
     text-align: left;
 }
 
