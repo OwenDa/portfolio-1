@@ -125,17 +125,11 @@ nav li a {
 }
 
 nav li:hover {
-    text-transform: uppercase;
+    text-decoration: underline;
 }
 
 .active {
     font-weight: 500;
-
-}
-
-hr {
-    border-top: 2vh solid var(--mid-blue);
-    clear: both;
 }
 
 /* Hero Image & Contents (All pages) */
