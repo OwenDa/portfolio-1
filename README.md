@@ -3,18 +3,19 @@
   
 ## Contents:
 1. [Purpose](#purpose)
-2. [Features](#features)
+2. [Tech Stack](#tech-stack)
+3. [Features](#features)
   + [Navigation](#navigation)
   + [Information Presentation](#information-presentation)
   + [Adopt Page](#adopt-page)
   + [Forms](#forms)
   + [Dark Mode](#dark-mode)
   + [Responsive Design](#responsive-design)
-3. [Validation](#validation)
-4. [Testing](#testing)
-5. [Accessbility](#accessibility)
-6. [Deployment](#deployment)
-7. [Acknowledgements](#acknowledgements)
+4. [Validation](#validation)
+5. [Testing](#testing)
+6. [Accessbility](#accessibility)
+7. [Deployment](#deployment)
+8. [Acknowledgements](#acknowledgements)
 
 ## Purpose  
 
@@ -40,7 +41,10 @@ Create a website which offers an introduction to whippets and other sighthounds,
 2. Equally, the project should ensure that its emphasis on whippets does not diminish the user's openness to other sighthound breeds. Rather, it should aim to promote adoption for all sighthounds while raising greater public awareness about the existence of whippets.  
 3. Finally, while acknowledging the distressing circumstances which cause sighthounds to require rehoming in such great numbers ("call-to-action" prompts placed near this information may help to convey a sense of urgency), the project should create a largely positive emotional response within the user, emphasising an optimistic and constructive tone overall.
 
-
+## Tech Stack  
+1. HTML
+2. CSS
+  
 ## Features 
 ### Navigation 
 World of Whippets presents the user with a simple navigation which is repeated on each page, ensuring ease of use. In addition to visual feedback identifying which page is currently being viewed, `aria-current="page"` provides the same function for those using assistive technology. Hovering over a navigation item also provides visual feedback, ensuring the user knows precisely which item they are hovering on before selecting it.  
