@@ -5,12 +5,12 @@
 1. [Purpose](#purpose)
 2. [Tech Stack](#tech-stack)
 3. [Features](#features)
-  + [Navigation](#navigation)
-  + [Information Presentation](#information-presentation)
-  + [Adopt Page](#adopt-page)
-  + [Forms](#forms)
-  + [Dark Mode](#dark-mode)
-  + [Responsive Design](#responsive-design)
+    + [Navigation](#navigation)
+    + [Information Presentation](#information-presentation)
+    + [Adopt Page](#adopt-page)
+    + [Forms](#forms)
+    + [Dark Mode](#dark-mode)
+    + [Responsive Design](#responsive-design)
 4. [Validation](#validation)
 5. [Testing](#testing)
 6. [Accessbility](#accessibility)
@@ -40,12 +40,14 @@ Create a website which offers an introduction to whippets and other sighthounds,
 1. The target audience is comprised of people who are not yet entirely familiar with whippets or with sighthouds generally. In order to have arrived at the website, the user must have some degree of curiousity on the subject, but it may also be their first introduction to the existence of this breed. Therefore, the project should not overwhelm the user with unecessary information but act as a bridge between the user's curiosity and contact with animal adoption services who can provide more specific information concerning individual dogs in their care.  
 2. Equally, the project should ensure that its emphasis on whippets does not diminish the user's openness to other sighthound breeds. Rather, it should aim to promote adoption for all sighthounds while raising greater public awareness about the existence of whippets.  
 3. Finally, while acknowledging the distressing circumstances which cause sighthounds to require rehoming in such great numbers ("call-to-action" prompts placed near this information may help to convey a sense of urgency), the project should create a largely positive emotional response within the user, emphasising an optimistic and constructive tone overall.
+</details>
 
 ## Tech Stack  
 1. HTML
 2. CSS
   
-## Features 
+## Features  
+
 ### Navigation 
 World of Whippets presents the user with a simple navigation which is repeated on each page, ensuring ease of use. In addition to visual feedback identifying which page is currently being viewed, `aria-current="page"` provides the same function for those using assistive technology. Hovering over a navigation item also provides visual feedback, ensuring the user knows precisely which item they are hovering on before selecting it.  
   
@@ -66,13 +68,14 @@ This page is headed by an suitably expressive image and makes use of the card st
 ### Forms
 Each page ends with a newsletter sign-up form. The inputs on this form are all keyboard focusable and make appropriate use of the `label` tag to aid those who use screenreaders. Visually, a subtle border aids the user in identifying the selected input. This is also true of the form located on [the Contact page](https://owenda.github.io/portfolio-1/contact). Form validation is used to ensure data is entered before submission and that data is of the correct `type`.
 
-### Dark Mode
+### Dark Mode  
+*Overview of World of Whippets Home Page (via [ami.responsivedesign.is](http://ami.responsivedesign.is))*
    <img src="assets/images/read-me-images/side-by-side.png" alt="Side-by-side screenshots of the World of Whippets homepage in both light and dark modes, being viewed on ami.responsivedesign.is which approximates a website's appearance on some of the most common screen sizes" width="100%" height="100%">  
 
 Lower contrast styles have been coded to preserve branding and aesthetic appeal when the user's device preferences are set to "Dark Mode". For more on this, [see Accessibility below](#accessibillity).  
   
 ### Responsive Design  
-*Overview of World of Whippets Home Page (via [ami.responsivedesign.is](http://ami.responsivedesign.is))*   
+*Overview of World of Whippets Contact Page (via [ami.responsivedesign.is](http://ami.responsivedesign.is))*   
  <img src="assets/images/read-me-images/contact-side-by-side.png" alt="Screenshot of the World of Whippets Contact page being viewed on ami.responsivedesign.is in both light and dark modes" width="100%" height="100%">   
    
    World of Whippets is fully responsive. All pages and features are responsive and maintain aesthetic appeal and function regardless of screen size, in both light and dark mode. Additional imagery is displayed on the homepage for particularly large screens only.
@@ -161,24 +164,38 @@ Images were optimised with the following workflow:
 
 Each of these steps was carried out with one individual image file initially and the tested. The steps were then carried out folder-by-folder within the project's file structure, with git commits at each stage.
 
-[pagespeed.web.dev](https://pagespeed.web.dev) revealed a significant dispartity between Mobile and Desktop performance (e.g. 79/100 vs 98/100 for index.html). This was partially corrected by adding further srcset options taking screen size into account. The developer was unable to follow all recommendations to improve performance due to the deployment environment, as per this [Stack Exchange discussion on GitHub cache policies](https://webapps.stackexchange.com/questions/119286/caching-assets-in-website-served-from-github-pages).  
+[pagespeed.web.dev](https://pagespeed.web.dev) revealed a significant dispartity between Mobile and Desktop performance (e.g. 79/100 vs 98/100 for index.html). The developer was unable to follow all recommendations to improve performance due to the deployment environment, as per this [Stack Exchange discussion on GitHub cache policies](https://webapps.stackexchange.com/questions/119286/caching-assets-in-website-served-from-github-pages).  
   
 ## Deployment
-The site was deployed to GitHub pages using the following procedue:
+<details><summary>
+Click to Expand: Deployment Procedure
+</summary></br>  
+
+The site was deployed to GitHub pages using the following procedure:
 1. Select the repository within the developer's GitHub account (previously set to public)
 2. Select "Settings".
 3. Navigate to the "Pages" section within "Settings".
 4. Under the heading "Source", select "Branch:main" (set to "None" by default).
 5. Deploy page to GitHub pages (note: there may a delay of several minutes before a site can be viewed at the link then provided by GitHub)
+</details>
 
 ## Acknowledgements  
 Acknowledgement and thanks are due to the author's assigned mentor for guidance gratefully received, as well as [Code Institute](https://codeinstitute.net/ie/) for tuition prior to the project inception.
+
+<details><summary>
+Click to view Code Credits & Resources.
+</summary></br>  
 
 ### Code Credits & Resources:
 1. "Whippet Fact File" table composed with reference to this [CSS Grid tutorial by Mark Heath](https://markheath.net/post/simple-tables-with-css-grid-layout).  
 2. Card design was partly based on this [W3Schools CSS Cards How-To](https://www.w3schools.com/howto/howto_css_cards.asp).
 3. Favicon added by following [these steps](https://lazaroibanez.com/how-to-add-a-favicon-to-github-pages-403935604460).
 4. Picture source and use of AVIF was assisted by this [picture element video tutorial](https://www.youtube.com/watch?v=rO6rvbN37ZA) and this [write-up on AVIF format](https://www.finally.agency/blog/what-is-avif-image-format).
+</details>
+
+<details><summary>
+Click to view Tools.
+</summary></br>  
 
 ### Tools:
 1. [Material Design](https://material.io/)'s [Color Tool](https://material.io/resources/color/) was used in devising the colour scheme.
@@ -189,6 +206,11 @@ Acknowledgement and thanks are due to the author's assigned mentor for guidance 
 6. The [W3C Markup](https://validator.w3.org/) and CSS [Markup Validation](http://jigsaw.w3.org/css-validator/) Services were used to ensure the code within this project was valid.
 7. The site [ami.responsivedesign.is](http://ami.responsivedesign.is) was used to generate screenshots demonstrating the site's responsiveness on common screen sizes.  
 8. PNG/JPG to AVIF conversion: [aconvert.com](https://www.aconvert.com/).
+</details>
+
+<details><summary>
+Click to view Image Credits.
+</summary></br> 
 
 ### Image Credits:
 *Site-wide*
@@ -217,3 +239,5 @@ Acknowledgement and thanks are due to the author's assigned mentor for guidance 
   
 *Contact*  
 1. Hero Image (whippet-in-padded-jacket.png): Photo by [S J on Unsplash](https://unsplash.com/photos/Blsz7BwY6ds).
+
+</details>
