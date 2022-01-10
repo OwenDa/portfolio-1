@@ -100,6 +100,7 @@ header {
     border-radius: 50%;
     display: inline-block;
     line-height: 90px;
+    margin-left: 1rem;
 }
 
 header a {
@@ -254,7 +255,7 @@ p {
     margin: 0 auto;
     display: grid;
     grid-template-columns: 38% 62%;
-    padding: 1rem .33rem 0 .33rem;
+    padding: 1rem 1rem 0 1rem;
     background-color: var(--light-blue);
     font-size: 1.1rem;
     color: var(--text-on-light-blue);
@@ -552,11 +553,6 @@ input[type="submit"] {
         --text-on-light-blue: #1e1e1e;
     }
 
-    #logo {
-        opacity: .7;
-        margin-left: 1rem;
-    }
-
     a {
         color: var(--bg-color);
     }
@@ -564,7 +560,7 @@ input[type="submit"] {
     nav li a,
     nav li a:visited {
         color: var(--mid-grey);
-        letter-spacing: .25rem;
+        padding-right: 1.2rem;
     }
 
     nav li a:active {
@@ -579,7 +575,7 @@ input[type="submit"] {
         color: var(--light-grey);
     }
 
-    .hero-image, img {
+    .hero-image, img, #logo {
         opacity: .6;
     }
 
