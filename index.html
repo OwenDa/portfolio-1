@@ -127,19 +127,21 @@
                     <!-- CARD 1 -->
                     <div class="card-effects card">
                         <picture>
-                            <!-- XXL screens: 2000px and wider -->
-                            <source type="image/avif" srcset="assets/images/homepage/sleeping-whippet-by-sergio-souza.avif" media="(min-width: 2000px)">
-                            <source type="image/png" srcset="assets/images/homepage/sleeping-whippet-by-sergio-souza.png" media="(min-width: 2000px)">
-                            <!-- Screens 1500-1999px wide -->
-                            <source type="image/avif" srcset="assets/images/homepage/500-wide/sleeping-whippet-by-sergio-souza-500.avif" media="(min-width: 1500px)">
-                            <source type="image/png" srcset="assets/images/hompeage/500-wide/sleeping-whippet-by-sergio-souza.png" media="(min-width: 1500px)">
-                            <!-- Smaller screens -->
-                            <source type="image/avif" srcset="assets/images/homepage/320-wide/sleeping-whippet-by-sergio-souza-320.avif"  320w>
-                            <source type="image/png" srcset="assets/images/hompeage/320-wide/sleeping-whippet-by-sergio-souza-320.png"  320w>
+                            <!-- .avif files -->
+                            <source type="image/avif" srcset="
+                            assets/images/homepage/sleeping-whippet-by-sergio-souza.avif 3x, 
+                            assets/images/homepage/500-wide/sleeping-whippet-by-sergio-souza-500.avif 2x, 
+                            assets/images/hompeage/320-wide/sleeping-whippet-by-sergio-souza-320.png 1x">
+                            <!-- PNG files -->
+                            <source type="image/png" srcset="
+                            assets/images/homepage/sleeping-whippet-by-sergio-souza.png 3x, 
+                            assets/images/hompeage/500-wide/sleeping-whippet-by-sergio-souza.png 2x,
+                            assets/images/hompeage/320-wide/sleeping-whippet-by-sergio-souza-320.png 1x">
                             <!-- img -->
-                            <img src="assets/images/homepage/sleeping-whippet-by-sergio-souza.png"
+                            <img src="assets/images/hompeage/320-wide/sleeping-whippet-by-sergio-souza-320.png"
                             alt="A sleeping whippet with its nose nestled in the folds of the blanket beneath.">
                         </picture>
+
                         <h3>"Whippets are high-energy dogs"</h3>
                         <p>Like their larger counterparts, the greyhound, whippets are a docile breed that like to snooze the day away in a cosy spot. For this reason, they're often compared to cats!</p>
                     </div>
