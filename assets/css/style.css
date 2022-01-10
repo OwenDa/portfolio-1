@@ -414,7 +414,6 @@ textarea {
     font-size: 1.2rem;
     margin: .5rem 0 1.4rem 0;
     padding: .25em;
-    background-color: var(--light-grey);
     border: 1px solid var(--mid-grey);
 }
 
@@ -558,6 +557,10 @@ input[type="submit"] {
         margin-left: 1rem;
     }
 
+    a {
+        color: var(--bg-color);
+    }
+
     nav li a,
     nav li a:visited {
         color: var(--mid-grey);
@@ -596,7 +599,6 @@ input[type="submit"] {
     }
 
     .card:hover {
-        background-color: var(--light-blue);
         box-shadow: 0 8px 14px 0 rgba(0, 0, 0, 1);
     }
 
@@ -604,5 +606,11 @@ input[type="submit"] {
         color: var(--text-on-light-blue);
         letter-spacing: .02rem;
         font-weight: 500;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+    background-color: var(--light-blue);
     }
 }
