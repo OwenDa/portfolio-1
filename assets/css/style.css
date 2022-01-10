@@ -154,15 +154,16 @@ nav li:hover {
 
 /* Hero Image: Per Page */
 #hero-home {
-    background: url('../images/hero-images/whippet-in-front-of-sea.png') no-repeat center center;
+    background: url('../images/hero-images/whippet-in-front-of-sea.jpg') no-repeat center center;
     background-size: cover;
     background-position-y: 75%;
 }
 
 #hero-adopt {
     background: url('../images/hero-images/close-up-of-lying-sighthound-looking-directly-at-camera.png') no-repeat center center;
-    background-size: cover;
+    background-size:cover;
     background-position-x: 30%;
+    background-position-y: center;
 }
 
 #hero-contact {
@@ -530,15 +531,6 @@ input[type="submit"] {
     input[type="email"],
     textarea {
         width: 300px;
-    }
-}
-
-/* Hero Image Resizing */
-@media screen and (max-width: 768px) {
-    #hero-home {
-        background:url('../images/hero-images/768-wide/whippet-in-front-of-sea-768.png');
-        background-position-y: 90%;
-        background-position-x: 57%;
     }
 }
 
