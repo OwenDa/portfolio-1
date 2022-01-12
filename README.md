@@ -1,5 +1,6 @@
 # World of Whippets
 *World of Whippets* seeks to raise interest in, and dispell some common misconceptions about, whippets and other sighthounds as these dogs are often overlooked by would-be pet owners seeking a new companion.  
+<img src="assets/images/read-me-images/homepage-am-i-responsive-light.png" alt="Screenshot of the World of Whippets Home Page being viewed on ami.responsivedesign.is which simulates the user experience on different screen sizes" width="100%" height="100%"> 
   
 ## Contents:
 1. [Purpose](#purpose)
@@ -11,11 +12,11 @@
     + [Forms](#forms)
     + [Dark Mode](#dark-mode)
     + [Responsive Design](#responsive-design)
-4. [Validation](#validation)
-5. [Testing](#testing)
-6. [Accessbility](#accessibility)
-7. [Deployment](#deployment)
-8. [Acknowledgements](#acknowledgements)
+4. [Testing](#testing)
+    + [Validation](#validation)
+    + [Accessbility](#accessibility)
+5. [Deployment](#deployment)
+6. [Acknowledgements](#acknowledgements)
 
 ## Purpose  
 
@@ -63,26 +64,41 @@ A shadow effect creates the impression that the cards are raised above the backg
 Follow-on information also includes a call-to-action link to the [Adopt](https://owenda.github.io/portfolio-1/adopt) page.  
 
 ### Adopt Page  
-This page is headed by an suitably expressive image and makes use of the card style presentation to summarise contact details for a selection of animal shelters. A link to a [pre-populated Google Maps query](https://www.google.ie/maps/search/dog+shelters) follows, enabling the user to search for further shelters. The purpose of this query is not only to aid the user in seeking shelters local to them within Ireland, but to prompt users who may be based outside of Ireland to search within their own country or state.
+This page is headed by an suitably expressive image and makes use of the card style presentation to summarise contact details for a selection of animal shelters. Each card contains a different image above the name of an animal shelter with an icon indicating the name can be clicked to visit an external link which opens in a new window. Beneath this, the user is given the address of the shelter to quickly ascertain whether it's near to their location, followed by an map marker icon and a link to "View on map", opening a new tab displaying the shelter's exact location in a Google Maps. Finally, a phone number is shown, accompanied by a phone-shaped icon. 
+
+Following this section of the page, a link is given to a [pre-populated Google Maps query](https://www.google.ie/maps/search/dog+shelters), enabling the user to search for further shelters. The purpose of this query is not only to aid the user in seeking shelters local to them within Ireland, but to prompt users who may be based outside of Ireland to search within their own country or state.
   
 ### Forms
-Each page ends with a newsletter sign-up form. The inputs on this form are all keyboard focusable and make appropriate use of the `label` tag to aid those who use screenreaders. Visually, a subtle border aids the user in identifying the selected input. This is also true of the form located on [the Contact page](https://owenda.github.io/portfolio-1/contact). Form validation is used to ensure data is entered before submission and that data is of the correct `type`.
+Each page ends with a newsletter sign-up form. The inputs on this form are all keyboard focusable and make appropriate use of the `label` tag to aid those who use screenreaders. Visually, a subtle border aids the user in identifying input fields, while a focus ring appears on any input when selected. This is also true of the form located on [the Contact page](https://owenda.github.io/portfolio-1/contact). Form validation is used to ensure data is entered before submission and that data is of the correct `type`.
 
 ### Dark Mode  
-*Overview of World of Whippets Home Page (via [ami.responsivedesign.is](http://ami.responsivedesign.is))*
-   <img src="assets/images/read-me-images/side-by-side.png" alt="Side-by-side screenshots of the World of Whippets homepage in both light and dark modes, being viewed on ami.responsivedesign.is which approximates a website's appearance on some of the most common screen sizes" width="100%" height="100%">  
+  <img src="assets/images/read-me-images/dark-mode-text-example.png" alt="The largest portion of text on the site is shown as it appears in dark mode" width="90%" height="auto">  
 
-Lower contrast styles have been coded to preserve branding and aesthetic appeal when the user's device preferences are set to "Dark Mode". For more on this, [see Accessibility below](#accessibillity).  
-  
+  Lower contrast styles have been coded to preserve branding and aesthetic appeal when the user's device preferences are set to "Dark Mode". This adds considerable value for user's who suffer from light sensitivity, migraines and certain visual disturbances, as well as those who simply wish to browse in low-light environments. For more on this, [see Accessibility below](#accessibility).  
+    
 ### Responsive Design  
-*Overview of World of Whippets Contact Page (via [ami.responsivedesign.is](http://ami.responsivedesign.is))*   
- <img src="assets/images/read-me-images/contact-side-by-side.png" alt="Screenshot of the World of Whippets Contact page being viewed on ami.responsivedesign.is in both light and dark modes" width="100%" height="100%">   
+  *Overview of World of Whippets Home Page (via [ami.responsivedesign.is](http://ami.responsivedesign.is))*   
+ <img src="assets/images/read-me-images/homepage-am-i-responsive-sidebyside.png" alt="Screenshot of the World of Whippets Home Page being viewed on ami.responsivedesign.is in both dark and light modes." width="90%" height="auto">   
    
-   World of Whippets is fully responsive. All pages and features are responsive and maintain aesthetic appeal and function regardless of screen size, in both light and dark mode. Additional imagery is displayed on the homepage for particularly large screens only.
+  World of Whippets is fully responsive in both dark and standard (light) mode. All pages and features respond appropriately and automatically to maintain aesthetic appeal and function regardless of screen size. Additional imagery is displayed on the homepage for particularly large screens only.  
 
-   The layout of the "card" features adapts according to screen size, displaying either as 1 row of 6 cards, 2 rows of 3 cards, 3 rows of 2 cards or 1 column of 6 cards.
-     
-## Validation
+  It should also be noted that font sizes are determined in relative units (namely, rem), allowing them to scale according to the user's preferred font size; this is relevant not only to larger screens (whose users may make use of a browser's zoom feature with or without increasing their standard font size).
+
+  <img src="assets/images/read-me-images/4k-view-additional-content.png" alt="Simulated view of the site on a large, 4k screen with three small additional images of dogs shown in the About section." width="90%" height="auto">  
+
+  At this larger screen size, a new layout is applied to the "Common Myths" cards, as well as those on the Adopt page. Depending on the user's device, cards may be displayed as:  
+  + 1 row of 6 cards (wide screens)  
+  + 2 rows of 3 cards (large-to-medium screen sizes, typical of laptops)  
+  + 3 rows of 2 cards (medium-to-small screens, typical of tablets)  
+  + 1 tall column of 6 cards (smaller screens, typical of smartphones)  
+   
+ <img src="assets/images/read-me-images/responsive-card-layouts.png" alt="Simulated views of the Adopt page on devices of differing screen widths." width="90%" height="auto"> 
+   
+  ## Testing  
+
+  The developer used an iterative design methodology throughout, beginning with a basic prototype of any given feature or aspect of the site, testing it, and refining it accordingly until an optimimum result was achieved. Some tests, such as HTML and CSS Validation, were also repeated throughout to minimise error.  
+
+  ### Validation
 1. [W3C](https://www.w3.org/)'s [Markup Validation Service](https://validator.w3.org/) reports the following:
     * Home Page (index.html)  
         - No errors or warnings to show.
@@ -94,40 +110,57 @@ Lower contrast styles have been coded to preserve branding and aesthetic appeal 
 2. [W3C](https://www.w3.org/)'s [CSS Validation Service](https://jigsaw.w3.org/css-validator/) reports the following:
 
     * CSS (style.css)
-        - No errors found (CSS level 3 + SVG).
-  
-  ## Testing  
-  *Lighthouse report summaries for each page:*   
- <img src="assets/images/read-me-images/lighthouse-summaries.png" alt="Lighthouse report summaries for all pages, showing scores of 100 in each case for Accessibility, Best Practices and SEO. Performance scores range from 95-98." width="70%" height="70%">  
-    
-   
+        - No errors found (CSS level 3 + SVG).  
+        <a href="http://jigsaw.w3.org/css-validator/check/referer">
+        <img style="border:0;width:88px;height:31px"
+        src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+        alt="Valid CSS!" />
+        </a>  
+
+   ### Manual Testing
   1. Manual testing was carried out to ensure all link works as intended, with external links opening in a new tab.   
   2. Functions such as form submission and form validation were manually tested by the developer and can be tested by submitting sample data.
-  3. The developer manually tested to ensure elements such as navigation links, form inputs and so on can be navigated with the tab key (for full Accessibility testing, [see Accessibility](#accessibility)).
-  4. Foreground-to-background colour contrast was tested via multiple [contrast-checking tools](#tools).
-  4. [PingDom](https://tools.pingdom.com) was used to test pageload speeds and pages sizes. For example, pre-[image optimisation](#performance), PingDom reported a homepage size of 9.4MB, reduced to 2.9MB and finally to 1.4MB following optimisation.
-  6. [pagespeed.web.dev](https://pagespeed.web.dev/) was used for the same purpose.
-  4. A [Lighthouse report](https://developers.google.com/web/tools/lighthouse) was generated for all pages, scoring each page on Performance, Accessibility, Best Practices and SEO.
+  3. The developer manually tested to ensure elements such as navigation links, form inputs and so on can be navigated with the tab key.  
+  4. Picture fall-backs were tested by opening pages in Google Chrome and inspecting the source. The expected result being that Chrome would display the AVIF file. This was then repeated in Microsoft Edge with the expection being that Edge would display the fallback PNG/JPG file. There should be no discernable difference to the end-user. The expected result was achieved in each case.  
+  5. Additional manual tests were carried out as part of an Accessibility Audit. These are described in the following section ([jump to Accessibility](#accessibility)).
+  
+  ### Testing Tools  
+  
+  1. Foreground-to-background colour contrast was tested with both [WebAIM](https://webaim.org/resources/contrastchecker/) and [Coolors.co](https://coolors.co/contrast-checker) contrast checking tools.
+    <img src="assets/images/read-me-images/contrast-checking-examples.png" alt="Side-by-side examples of the aforementioned tools in use." width="70%" height="auto"> 
+
+  4. [PingDom](https://tools.pingdom.com) was used to test pageload speeds and pages sizes. This helped to guide actions such as [image optimisation](#performance).
+   <img src="assets/images/read-me-images/pingdom-example-adopt-page.png" alt="Example of PingDom results (adopt.html)" width="40%" height="auto"> 
+  6. [Page Speed Insights](https://pagespeed.web.dev/) was used for the same purpose. Notably, however, Page Speed Insights revealed a highlights the disparity in performance between the Mobile and Desktop user experiences which should be reduced in future development.
+     <img src="assets/images/read-me-images/page-speed-insights-home-comparison.png" alt="Screenshot of Page Speed Insights for the Home page, with a performance score of 99 for desktop and 88 for mobile" width="70%" height="auto"> 
+  4. [Lighthouse](https://developers.google.com/web/tools/lighthouse) reports were generated for all pages, scoring each page on Performance, Accessibility, Best Practices and SEO.   
+ <img src="assets/images/read-me-images/wow-lighthouse-trio-light-mode.png" alt="Lighthouse report summaries for all pages, showing scores of 99 Performance, 97 for Accessibility, 100 for Best Practices and 100 for SEO." width="70%" height="auto">  
+
   5. Google Chrome's Dev Tools was used throughout the development process to ensure responsiveness.
-  6. The website [Can I Use?](https://caniuse.com/?search=avif) was used to check browser support for AVIF image formats, as a result of which, fall-back formats are also provided.
-  7. Picture fall-backs were tested by opening pages in Google Chrome and inspecting the source. The expected result being that Chrome would display the AVIF file. This was then repeated in Microsoft Edge with the expection being that Edge would display the fallback PNG/JPG file. There should be no discernable difference to the end-user. The expected result was achieved in each case. 
+  6. The website [Can I Use?](https://caniuse.com/?search=avif) was used to check browser support for AVIF image formats, as a result of which, fall-back formats are also provided.  
+   <img src="assets/images/read-me-images/can-i-use-example.png" alt="A screenshot from the website Can I Use detailing current browser support for the AVIF image format." width="70%" height="auto"> 
+
+  7. Additional tools were used to carry out an Accessibility Audit as described in the next section.
 
   ## Accessibility  
 
-  ### Accessible Design Points
+  ### Accessible Design
 
-  1. All `img` elements contain alt-text.  
-    + Purely decorative elements, namely the header images on each page, use background:url() properties instead of `img` tags; this allows screen readers to skip this decorative content and bring the reader directly to the main content of the page. `img` tags were reserved for images within the main content as these images are thematically related to the text which accompanies them. Alt-text relays a description of these images to ensure an analogous experience between users with visual impairment and users without visual impairment.
-  2. ARIA labels are used on all visual elements which operate as interactive controls, for example, social media icons which operate as links.
-  3. Input labels appear alongside and are associated with their respective fields, ensuring screen readers can correctly identify each form field and submit button.
-  4. ARIA labels indicate that external links will open in a new tab.
+  1. All `img` elements contain alt-text.
+    + Purely decorative elements, namely the header images on each page, use background:url() properties instead of `img` tags; this allows screen readers to skip this decorative content and bring the reader directly to the main content of the page. `img` tags were reserved for images within the main content as these images are thematically related to the text which accompanies them. Alt-text relays a description of these images to ensure an analogous experience between users with visual impairment and users without visual impairment.  
+  2. ARIA labels are used on all visual elements which operate as interactive controls, for example, social media icons which operate as links.  
+  3. Input labels appear alongside and are associated with their respective fields, ensuring screen readers can correctly identify each form field and submit button.  
+  4. ARIA labels indicate that external links will open in a new tab.  
   5. Page contents are broken into semantically meaninful sections, such as Header, Nav, Main and Footer.
-  6. Foreground and background colours were checked to ensure adequate contrast (using [WebAIM](https://webaim.org/) and [Contrast Checker](https://coolors.co/contrast-checker)).
-  7. Dark Mode styles, however, use lower contrast colours and reduce the brightness of images, reducing eye strain and improving accessibility for users with light-sensitivity.
-    + This deviation from design recommendations is within the user's control and is justified by the added benefits provided to users who wish to make use of Dark Mode on their devices, without cost to those who do not. It does not impact on the legibility of text or accessibility of the website for users not employing Dark Mode on their devices.
+  6. Headers are sequential in use (e.g. H3 nested under H2, not illogical jumps, etc.)  
+  7. As point of both usability and accessibility, the site can be rotated and viewed in landscape mode on mobile devices.
+  8. Font sizes are determined in rem, allowing them to scale according to the user's browser or device font-size settings.
+  9. Foreground and background colours were checked to ensure adequate contrast ([as described in Testing](#testing)).  
+  10. Dark Mode styles, however, use lower contrast colours and reduce the brightness of images, reducing eye strain and improving accessibility for users with light-sensitivity.  
+  + This variation is entirely within the user's control and utilises their existing preferences within the device settings. Added benefit is therefore provided to users who wish to make use of Dark Mode on their devices, without cost to those who do not. It does not impact on the legibility of text or accessibility of the website for users not employing Dark Mode on their devices.
 
   *Overview of Adopt page in dark mode (via [ami.responsivedesign.is](http://ami.responsivedesign.is))*   
- <img src="assets/images/read-me-images/ami-responsivedesign-dark-adopt.png" alt="Screenshot of the World of Whippets Adopt page being viewed on ami.responsivedesign.is which approximates a website's appearance on some of the most common screen sizes. In this screenshot, the website's dark mode is shown." width="70%" height="70%">   
+ <img src="assets/images/read-me-images/adopt-page-am-i-responsive-dark.png" alt="Screenshot of the World of Whippets Adopt page being viewed on ami.responsivedesign.is which approximates a website's appearance on some of the most common screen sizes. In this screenshot, the website's dark mode is shown." width="70%" height="70%">   
    
   ### Accessibility Audit
  As part of an accessibility audit, the developer made use of assistive technology, namely [NV Access](https://www.nvaccess.org) which is a freely available screen reader. However, it should be noted that the developer is a novice user of this technology and does not regularly use assistive technology.  
@@ -135,20 +168,22 @@ Lower contrast styles have been coded to preserve branding and aesthetic appeal 
 The audit workflow involved: 
   1. Navigating the website using only a screenreader.
   2. Navigating the webstie using only the keyboard.
-  3. [TopTal's Color Blind Webpage Filter](https://www.toptal.com/designers/colorfilter) was used to ensure the site remains perceivable and operable for all users, regardless of colour blindness.
-  3. In addition, Google's Lighthouse tool was used to generate an accessbility report.
+  3. [TopTal's Color Blind Webpage Filter](https://www.toptal.com/designers/colorfilter) was used to ensure the site remains perceivable and operable for all users, regardless of colour blindness.   
+<img src="assets/images/read-me-images/color-blindness-filter-example-contact.png" alt="TopTal's Color Blind Webpage Filter demonstrating the appearance of the site to a user with protanopia." width="70%" height="70%">
+  3. In addition, Google's Lighthouse tool was used to generate an accessbility report as described in [Testing](#testing).
   4. Finally, [WebAIM's WAVE tool](https://wave.webaim.org/) was used to assess the accessbility of each page and feature.
+   <img src="assets/images/read-me-images/web-aim-wave-example-newsletter.png" alt="Example of Web AIM's WAVE tool in use on the Newsletter Sign-up portion of the site." width="70%" height="70%">
 
 ### Audit Outcomes   
-  1. Lighthouse reports an accessability score of 100 on all pages when vied in the standard mode. In dark mode, the reduction in contrast reduces the scores for the Home and Adopt pages to 97.
+  1. Lighthouse reports an accessibility score of 97 on all pages when vied in the standard mode. In dark mode, the reduction in contrast reduces the scores on some pages to drop as low as 94; this is more than justified by the real-world gains in accessiblity for users employing dark more and does not affect other users in any way.
   2. Navigation items, form inputs, buttons and links can all be navigated forwards and backwards with the tab key and a focus-ring is present in each case.
   3. The developer was able to navigate the website in full and successfully complete all user-tasks.
   4. [WAVE](https://wave.webaim.org/) reported 0 Errors on each page, however, some alerts were noted and the following revisions were made in response:
     + Based on the [WAVE] report generated, the alt-text provided on several images was shortened.
     + Justified-text was retained after considering the text density and line-height.
-  5. As point of both usability and accessibility, the site can be rotated and viewed in landscape mode on mobile devices.
-  6. Full stops (US: Periods) after anchor closing tags were either (example: `Google Maps</a>.</p>`) were either removed or placed inside of the anchor element (example: `Google Maps</a></p>` or `Google Maps.</a></p>`). This prevents screen readers from annoucning "Dot" after reading the associated ARIA-label.
-  7. `aria-hidden=true` was used on the `#site-name` div to prevent unhelpful and potentially confusing repition of links and information for screen-reader users. The reduces the Lighthouse accessibility score, however, it is more than justified by the real-world increase in accessibility.
+  5. Full stops (US: Periods) after anchor closing tags were either (example: `Google Maps</a>.</p>`) were either removed or placed inside of the anchor element (example: `Google Maps</a></p>` or `Google Maps.</a></p>`). This prevents screen readers from annoucning "Dot" after reading the associated ARIA-label.
+  6. `aria-hidden="true"` was used on the `#site-name` div to prevent unhelpful and potentially confusing repition of links and information for screen-reader users. The reduces the Lighthouse Accessibility score, however, it is more than justified by the real-world increase in accessibility.  
+  7. It should be noted that the Lighthouse Accessibility scores of 94-97 revert to 100 when features such as dark mode and the aforementioned use of `aria-hidden="true"` are removed; however, as noted, these decisions add real-world accessibility not necessarily reflected by any given automated tool.
 
 ## Performance  
 Performance testing was carried out via the tools covered in [Testing](#testing).  
@@ -160,11 +195,12 @@ Images were optimised with the following workflow:
 3. PNG/JPG files were compressed ([see Tools](#tools)).
 4. These optimised images were then uploaded in place of the larger copies orginally used.
 5. The optimised images were also converted to AVIF format ([see Tools](#tools)) and copies uploaded accordingly.
-6. HTML was written to ensure that browsers which support AVIF display these files while browsers that do not support AVIF will use the PNG/JPG fallback instead.
+6. HTML was written to ensure that browsers which support AVIF display these files while browsers that do not support AVIF will use the PNG/JPG fallback instead.  
+  + As this is done in the markup (HTML) and not the CSS, it does not increase the bandwidth burden on the user's device as only the selected image loaded.
 
-Each of these steps was carried out with one individual image file initially and the tested. The steps were then carried out folder-by-folder within the project's file structure, with git commits at each stage.
+Each of these steps was carried out with one individual image file initially and the tested. The steps were then carried out folder-by-folder within the project's file structure, with git commits at each stage. Alternative strategies were also trialled, however, this was ultimately determined to be the most efficient for the *World of Whippets* project.
 
-[pagespeed.web.dev](https://pagespeed.web.dev) revealed a significant dispartity between Mobile and Desktop performance (e.g. 79/100 vs 98/100 for index.html). The developer was unable to follow all recommendations to improve performance due to the deployment environment, as per this [Stack Exchange discussion on GitHub cache policies](https://webapps.stackexchange.com/questions/119286/caching-assets-in-website-served-from-github-pages).  
+Note that some aspects of performance optimisation cannot be acted upon within the current environment, as per this [Stack Exchange discussion on GitHub cache policies](https://webapps.stackexchange.com/questions/119286/caching-assets-in-website-served-from-github-pages).   
   
 ## Deployment
 <details><summary>
@@ -181,23 +217,24 @@ The site was deployed to GitHub pages using the following procedure:
 
 ## Acknowledgements  
 Acknowledgement and thanks are due to the author's assigned mentor for guidance gratefully received, as well as [Code Institute](https://codeinstitute.net/ie/) for tuition prior to the project inception.
-
+  
+### Code Credits & Resources:
 <details><summary>
-Click to view Code Credits & Resources.
+Click to expand.
 </summary></br>  
 
-### Code Credits & Resources:
 1. "Whippet Fact File" table composed with reference to this [CSS Grid tutorial by Mark Heath](https://markheath.net/post/simple-tables-with-css-grid-layout).  
 2. Card design was partly based on this [W3Schools CSS Cards How-To](https://www.w3schools.com/howto/howto_css_cards.asp).
 3. Favicon added by following [these steps](https://lazaroibanez.com/how-to-add-a-favicon-to-github-pages-403935604460).
 4. Picture source and use of AVIF was assisted by this [picture element video tutorial](https://www.youtube.com/watch?v=rO6rvbN37ZA) and this [write-up on AVIF format](https://www.finally.agency/blog/what-is-avif-image-format).
-</details>
-
-<details><summary>
-Click to view Tools.
-</summary></br>  
+</details>  
+  
 
 ### Tools:
+<details><summary>
+Click to expand.
+</summary></br>  
+
 1. [Material Design](https://material.io/)'s [Color Tool](https://material.io/resources/color/) was used in devising the colour scheme.
 2. Both [WebAIM](https://webaim.org/) and [Coolors.co](https://coolors.co)'s [Contrast Checker](https://coolors.co/contrast-checker) were used to compare colour contrast.
 3. Images were largely sourced using [Pexels](https://www.pexels.com/) and [Unsplash](https://unsplash.com/).
@@ -207,12 +244,12 @@ Click to view Tools.
 7. The site [ami.responsivedesign.is](http://ami.responsivedesign.is) was used to generate screenshots demonstrating the site's responsiveness on common screen sizes.  
 8. PNG/JPG to AVIF conversion: [aconvert.com](https://www.aconvert.com/).
 </details>
-
+  
+### Image Credits:
 <details><summary>
-Click to view Image Credits.
+Click to expand.
 </summary></br> 
 
-### Image Credits:
 *Site-wide*
 1. Header Logo Image (whippet-silhouette-logo.png): Amended from [Public Domain Pictures](https://www.publicdomainpictures.net/en/view-image.php?image=74959&picture=grey-hound&large=1) image.  
   

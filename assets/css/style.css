@@ -81,7 +81,7 @@ header {
 #site-name {
     display: flex;
     flex-direction: row;
-    flex: wrap;
+    flex-wrap: wrap;
 }
 
 /* Styles 'World of' in header site name */
@@ -362,7 +362,7 @@ p {
 }
 
 .shetler-details h3 {
-    padding: .5rem .5rem .75 0;
+    padding: .5rem .5rem .75rem 0;
 }
 
 .shelter-details a {
