@@ -1,6 +1,6 @@
 # World of Whippets
 *World of Whippets* seeks to raise interest in, and dispel some common misconceptions about, whippets and other sighthounds as these dogs are often overlooked by would-be pet owners seeking a new companion.  
-    <img src="assets/images/adopt/floppy-eared-whippet.png" alt="A whippet with one ear pointing straight up and the other flopping down to the side." width="100%" height="auto"> 
+    <img src="assets/images/adopt/floppy-eared-whippet.jpg" alt="A whippet with one ear pointing straight up and the other flopping down to the side." width="100%" height="auto"> 
   
 ## Contents:
 1. [Purpose](#purpose)
@@ -33,7 +33,7 @@ Whippets are a dog breed which belong to the class "Sighthound". This class of d
 An additional problem exists for the whippet breed specifically:  
   - Compared to other sighthounds, the general public is more aware of greyhounds, due to their visibility in racing and the ongoing public debate concerning its legality. Although much smaller, whippets closely resemble greyhounds, more so than any other sighthound breed and are often mistaken for greyhound puppies. Those who do not wish to adopt a greyhound may fail to consider a whippet simply because they are not aware of their existence.  
 
-    <img src="assets/images/homepage/sighthound-puppy-looking-at-camera.png" alt="A whippet puppy looking directly at the camera" width="40%" height="auto"> 
+    <img src="assets/images/homepage/sighthound-puppy-looking-at-camera.jpg" alt="A whippet puppy looking directly at the camera" width="40%" height="auto"> 
   
 ### Problem Statement:
 Insufficient public awareness surrounding sighthounds and, in this case, whippets in particular, causes lower rates of adoption and significantly lengthens the rehoming process, placing greater strain on shelter resources.
@@ -165,11 +165,16 @@ This is also true of the form located on [the Contact page](https://owenda.githu
 
   4. [PingDom](https://tools.pingdom.com) was used to test page-load speeds and pages sizes. This helped to guide actions such as [image optimisation](#performance).
    <img src="assets/images/read-me-images/pingdom-example-adopt-page.png" alt="Example of PingDom results (adopt.html)" width="40%" height="auto"> 
-  6. [Page Speed Insights](https://pagespeed.web.dev/) was used for the same purpose. Notably, however, Page Speed Insights highlights a disparity in performance between the Mobile and Desktop user experiences which should be reduced in future development.
+  6. [Page Speed Insights](https://pagespeed.web.dev/) was used for the same purpose. Notably, however, Page Speed Insights highlights a disparity in performance between the Mobile and Desktop user experiences which should be reduced in any future development.
      <img src="assets/images/read-me-images/page-speed-insights-home-comparison.png" alt="Screenshot of Page Speed Insights for the Home page, with a performance score of 99 for desktop and 88 for mobile" width="70%" height="auto"> 
-  4. [Lighthouse](https://developers.google.com/web/tools/lighthouse) reports were generated for all pages, scoring each page on Performance, Accessibility, Best Practices and SEO.   
- <img src="assets/images/read-me-images/wow-lighthouse-trio-light-mode.png" alt="Lighthouse report summaries for all pages, showing scores of 99 Performance, 97 for Accessibility, 100 for Best Practices and 100 for SEO." width="70%" height="auto">  
+  4. Throughout development, [Lighthouse](https://developers.google.com/web/tools/lighthouse) reports were generated for all pages, scoring each page on Performance, Accessibility, Best Practices and SEO. The Chrome browser was primarily used, however, Google's Lighthouse tool can also be used within Microsoft's Edge browser, and this was also employed at times, as these two browsers interact with the site's images differently ([see Performance](#performance)). Of course, it should be borne in mind that Lighthouse scores can fluctuate with CPU load, however, every effort was made to keep the testing environment as similar and stable as possible.  
+       
+  *The image below provides a snapshot of Lighthouse scores on all three pages at one moment in time during the development process*  
+  <img src="assets/images/read-me-images/wow-lighthouse-trio-light-mode.png" alt="Lighthouse report summaries for all pages, showing scores of 99 Performance, 97 for Accessibility, 100 for Best Practices and 100 for SEO." width="70%" height="auto">  
+   *Below: Lighthouse scores at time of project completion*  
+  <img src="assets/images/read-me-images/lighthouse-trio-17-1-2022.png" alt="Lighthouse report summaries for all pages, showing scores of 99-100 for all Lighthouse measures on all pages." width="70%" height="auto">  
 
+  
   5. Google Chrome's Dev Tools was used throughout the development process to ensure responsiveness.
   6. The website [Can I Use?](https://caniuse.com/?search=avif) was used to check browser support for AVIF image formats, as a result of which, fall-back formats are also provided.  
    <img src="assets/images/read-me-images/can-i-use-example.png" alt="A screenshot from the website Can I Use detailing current browser support for the AVIF image format." width="70%" height="auto"> 
@@ -235,7 +240,7 @@ Images were optimised with the following workflow:
 
 Each of these steps was carried out with one individual image file initially and then tested. The steps were then carried out folder-by-folder within the project's file structure, with git commits at each stage. Alternative strategies were also trialled, however, this was ultimately determined to be the most efficient for the *World of Whippets* project.
 
-Note that some aspects of performance optimisation cannot be acted upon within the current environment, as per this [Stack Exchange discussion on GitHub cache policies](https://webapps.stackexchange.com/questions/119286/caching-assets-in-website-served-from-github-pages).   
+Note that some aspects of performance optimisation cannot be acted upon within the current environment, as per this [Stack Exchange discussion on GitHub cache policies](https://webapps.stackexchange.com/questions/119286/caching-assets-in-website-served-from-github-pages). Were the project to be developed further, the site's mobile performance in particular should be enhanced; this would become all the more important were more content and functions to be added.
   
 ## Deployment
 <details><summary>
@@ -290,25 +295,25 @@ Click to expand.
 1. Header Logo Image (whippet-silhouette-logo.png): Amended from [Public Domain Pictures](https://www.publicdomainpictures.net/en/view-image.php?image=74959&picture=grey-hound&large=1) image.  
   
 *Home Page*  
-1. Hero Image (whippet-in-front-of-sea.png): Photo by [Diana D. Reinoso - Pexels](https://www.pexels.com/photo/black-and-white-short-coat-dog-73639). 
+1. Hero Image (whippet-in-front-of-sea.jpg): Photo by [Diana D. Reinoso - Pexels](https://www.pexels.com/photo/black-and-white-short-coat-dog-73639). 
 2. Images shown on screens 1615px wide and above (from left-to-right):
     * Photo by [Dada Mar - Unsplash](https://unsplash.com/photos/2B6b5tyWDWk).
     * Photo by [Marius Cern - Unsplash](https://unsplash.com/photos/Im8Vnagv3r8).
     * Photo sourced via [PickPik.com](https://www.pickpik.com/dog-whipet-hound-the-head-of-greyhound-racing-profile-green-118892).
-2. Card Image (sleeping-whippet-by-sergio-souza.png): Photo by [Sergio Souza - Pexels](https://www.pexels.com/photo/cute-whippet-dog-sleeping-on-cozy-bed-5046656/).
-3. Card Image (small-italian-greyhound.png): Photo by [@belettenoir - Pexels](https://unsplash.com/photos/Sjf4NZIYaL0).  
-4. Card Image (whippet-on-leash.png): Photo by [Mitchell Orr - Unsplash](https://unsplash.com/photos/iEXaSu3U1po).
-5. Card Image (dogs-with-cat.png): Photo by [Chewy - Unsplash](https://unsplash.com/photos/gWzTum_yMCg).  
-6. Card Image (woman-kissing-whippet-cheek.png): Photo by [Chewy - Unsplash](https://unsplash.com/photos/sdF1Zc6-OQw).  
+2. Card Image (sleeping-whippet-by-sergio-souza.jpg): Photo by [Sergio Souza - Pexels](https://www.pexels.com/photo/cute-whippet-dog-sleeping-on-cozy-bed-5046656/).
+3. Card Image (small-italian-greyhound.jpg): Photo by [@belettenoir - Pexels](https://unsplash.com/photos/Sjf4NZIYaL0).  
+4. Card Image (whippet-on-leash.jpg): Photo by [Mitchell Orr - Unsplash](https://unsplash.com/photos/iEXaSu3U1po).
+5. Card Image (dogs-with-cat.jpg): Photo by [Chewy - Unsplash](https://unsplash.com/photos/gWzTum_yMCg).  
+6. Card Image (woman-kissing-whippet-cheek.jpg): Photo by [Chewy - Unsplash](https://unsplash.com/photos/sdF1Zc6-OQw).  
 7. Card Image (sighthound-puppy-looking-at-camera.jpg): Photo by [Chris Arthur-Collins - Unsplash](https://unsplash.com/photos/SZ3rC3M8L0k). 
   
 *Adopt*  
-1. Card Image (whippet-close-up-portrait.png): Photo by [Mitchell Orr - Unsplash](https://unsplash.com/photos/mHeS96HeeQE).
-2. Card Image (sighthound-on-carpet.png): Photo by [Sean M. - Pexels](https://www.pexels.com/photo/carpet-dog-doggo-filter-147338/).
-3. Card Images (floppy-eared-whippet.png): Photo by [S J - Pexels](https://unsplash.com/photos/508khDxcc5I).
-4. Card Images (profile-portrait-dog.png): Photo by [Dada Mar - Unsplash](https://unsplash.com/photos/vW3TSK0KQAc).
-5. Card Image (sighthound-lying-on-bed.png): Photo by [Enzo Muñoz - Pexels](https://www.pexels.com/photo/a-brown-dog-with-blue-shirt-lying-on-the-bed-5493602/).
-6. Card Image (woodland-whippet.png): Photo by [Mitchell Orr - Unsplash](https://unsplash.com/photos/UTLouG6wK4Y).
+1. Card Image (whippet-close-up-portrait.jpg): Photo by [Mitchell Orr - Unsplash](https://unsplash.com/photos/mHeS96HeeQE).
+2. Card Image (sighthound-on-carpet.jpg): Photo by [Sean M. - Pexels](https://www.pexels.com/photo/carpet-dog-doggo-filter-147338/).
+3. Card Images (floppy-eared-whippet.jpg): Photo by [S J - Pexels](https://unsplash.com/photos/508khDxcc5I).
+4. Card Images (profile-portrait-dog.jpg): Photo by [Dada Mar - Unsplash](https://unsplash.com/photos/vW3TSK0KQAc).
+5. Card Image (sighthound-lying-on-bed.jpg): Photo by [Enzo Muñoz - Pexels](https://www.pexels.com/photo/a-brown-dog-with-blue-shirt-lying-on-the-bed-5493602/).
+6. Card Image (woodland-whippet.jpg): Photo by [Mitchell Orr - Unsplash](https://unsplash.com/photos/UTLouG6wK4Y).
   
 *Contact*  
 1. Hero Image (whippet-in-padded-jacket.png): Photo by [S J on Unsplash](https://unsplash.com/photos/Blsz7BwY6ds).
