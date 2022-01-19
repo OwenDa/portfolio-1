@@ -599,6 +599,6 @@ input[type="submit"] {
     input[type="text"],
     input[type="email"],
     textarea {
-    background-color: var(--light-blue);
+    background-color: var(--dark-grey);
     }
 }
