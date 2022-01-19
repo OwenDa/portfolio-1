@@ -67,14 +67,17 @@ Create a website which offers an introduction to whippets and other sighthounds,
 2. Encounter visual elements that create a satisfying a positive emotional reaction.  
 3. Learn about sighthound breeds in manageable, bite-size chunks without being overwhelmed.  
 4. Have access to the important information that best determines whether a given dog breed is a suitable pet for me.  
-5. Find links to further resources where I can take the next steps in information gathering and adoption.  
+5. Find links and contact details for further resources where I can take the next steps in information gathering and adoption.  
 6. Have access to social media profiles that I can "Like", "Follow" and/or share to show my support.  
-7. Sign up to a newsletter that offers me further information on the subject of adoption or pet ownership.
+7. Sign up to a newsletter that offers me further information on the subject of adoption or pet ownership.  
+8. Navigate the site with ease, regardless of whether I use assistive technology or not, or need to have my device in dark mode.
+9. Easily contact the site owner if I have any questions or queries.
   
 **As a returning user, I want to...**  
 1. Show my support of the site's goals by liking, following and/or sharing social media profiles.
 2. Quickly rediscover shelter details that I might like to follow-up on, having thought over the information on the site.
-3. Sign up to a newsletter that will provide me with ongoing information about pet adoption and ownership.
+3. Quickly and easily establish contact with a shelter.
+4. Sign up to a newsletter that will provide me with ongoing information about pet adoption and ownership.
   
 ## Tech Stack  
 1. Languages
@@ -192,7 +195,8 @@ This is also true of the form located on [the Contact page](https://owenda.githu
   2. Functions such as form submission and form validation were manually tested by the developer and can be tested by submitting sample data.
   3. The developer manually tested to ensure elements such as navigation links, form inputs and so on can be navigated with the tab key.  
   4. Picture fall-backs were tested by opening pages in Google Chrome and inspecting the source. The expected result being that Chrome would display the AVIF file. This was then repeated in Microsoft Edge with the expectation being that Edge would display the fallback PNG/JPG file. There should be no discernable difference to the end-user. The expected result was achieved in each case.  
-  5. Additional manual tests were carried out as part of an Accessibility Audit. These are described in the following section ([jump to Accessibility](#accessibility)).  
+  5. The site was also viewed on multiple physical devices, in addition to the emulated screensizes provided by Chrome's Dev Tools.
+  6. Additional manual tests were carried out as part of an Accessibility Audit. These are described in the following section ([jump to Accessibility](#accessibility)).  
     
   ### Testing Tools  
   
@@ -215,7 +219,9 @@ This is also true of the form located on [the Contact page](https://owenda.githu
   6. The website [Can I Use?](https://caniuse.com/?search=avif) was used to check browser support for AVIF image formats, as a result of which, fall-back formats are also provided.  
    <img src="assets/images/read-me-images/can-i-use-example.png" alt="A screenshot from the website Can I Use detailing current browser support for the AVIF image format." width="70%" height="auto">  
   
-  7. Additional tools were used to carry out an Accessibility Audit as described in the next section.
+  7. [GTMetrix](https://gtmetrix.com/) was also used to assess performance.  
+    <img src="assets/images/read-me-images/gtmetrix.png" alt="GT Metrix scores all three pages 100% for Performance and 94% for Structure, resulting in a GT Metrix grade of A." width="70%" height="auto"> 
+  8. Additional tools were used to carry out an Accessibility Audit as described in the next section.
   
   
   ## Accessibility  
@@ -294,7 +300,7 @@ The site was deployed to GitHub pages using the following procedure:
 5. Deploy page to GitHub pages (note: there may a delay of several minutes before a site can be viewed at the link then provided by GitHub)
 </details>
   
-  
+
 ## Acknowledgements  
 Acknowledgement and thanks are due to the author's assigned mentor for guidance gratefully received, as well as [Code Institute](https://codeinstitute.net/ie/) for tuition prior to the project inception.
   
@@ -319,11 +325,16 @@ Click to expand.
 1. [Material Design](https://material.io/)'s [Color Tool](https://material.io/resources/color/) was used in devising the colour scheme.
 2. Both [WebAIM](https://webaim.org/) and [Coolors.co](https://coolors.co)'s [Contrast Checker](https://coolors.co/contrast-checker) were used to compare colour contrast.
 3. Images were largely sourced using [Pexels](https://www.pexels.com/) and [Unsplash](https://unsplash.com/).
-4. Images were compressed using [TinyPNG](https://tinypng.com/).
+4. Images were compressed using [TinyPNG](https://tinypng.com/) and [CompressPNG](https://compresspng.com/).
 5. As will be seen within the code itself, Font Awesome was used to source icons on several pages.
 6. The [W3C Markup](https://validator.w3.org/) and CSS [Markup Validation](http://jigsaw.w3.org/css-validator/) Services were used to ensure the code within this project was valid.
 7. The site [ami.responsivedesign.is](http://ami.responsivedesign.is) was used to generate screenshots demonstrating the site's responsiveness on common screen sizes.  
-8. PNG/JPG to AVIF conversion: [aconvert.com](https://www.aconvert.com/).
+8. PNG/JPG to AVIF conversion: [aconvert.com](https://www.aconvert.com/).  
+9. [GTMetrix](https://gtmetrix.com/), [PingDom](https://tools.pingdom.com), [Page Speed Insights](https://pagespeed.web.dev/) and [Lighthouse](https://developers.google.com/web/tools/lighthouse) were all used at various points to assess performance.  
+10. [W3C](https://www.w3.org/)'s [Markup Validation Service](https://validator.w3.org/) and [CSS Validation Service](https://jigsaw.w3.org/css-validator/) were used to validate all code.
+11. The website [Can I Use?](https://caniuse.com/?search=avif) was used to check browser support for certain features.
+12. Browswers Chrome (Google) and Edge (Microsoft) were used during development and testing. 
+13. Chrome extension [GoFullPage](https://chrome.google.com/webstore/detail/gofullpage-full-page-scre/fdpohaocaechififmbbbbbknoalclacl) was used to generate full page screenshots.
 </details>
   
 ### Image Credits:
