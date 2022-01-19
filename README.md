@@ -1,6 +1,7 @@
 # World of Whippets
 *World of Whippets* seeks to raise interest in, and dispel some common misconceptions about, whippets and other sighthounds as these dogs are often overlooked by would-be pet owners seeking a new companion.  
-    <img src="assets/images/adopt/floppy-eared-whippet.jpg" alt="A whippet with one ear pointing straight up and the other flopping down to the side." width="100%" height="auto"> 
+  
+  <img src="assets/images/adopt/floppy-eared-whippet.jpg" alt="A whippet with one ear pointing straight up and the other flopping down to the side." width="100%" height="auto"> 
   
 ## Contents:
 1. [Purpose](#purpose)
@@ -49,8 +50,12 @@ Create a website which offers an introduction to whippets and other sighthounds,
     <img src="assets/images/read-me-images/homepage-am-i-responsive-light.png" alt="Screenshot of the World of Whippets Home Page being viewed on ami.responsivedesign.is which simulates the user experience on different screen sizes" width="50%" height="auto"> 
 
 ## Tech Stack  
-1. HTML
-2. CSS
+1. Languages
+  + HTML
+  + CSS
+2. Frameworks & Libraries
+  + Google Fonts
+  + FontAwesome
   
 ## Features  
 
