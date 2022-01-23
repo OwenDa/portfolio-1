@@ -15,6 +15,7 @@
     + [Adopt Page](#adopt-page)
     + [Forms](#forms)
     + [Dark Mode](#dark-mode)
+    + [404 Error Handling](#404)
     + [Responsive Design](#responsive-design)
 4. [Testing](#testing)
     + [Validation](#validation)
@@ -148,6 +149,10 @@ This is also true of the form located on [the Contact page](https://owenda.githu
   
   Lower contrast styles have been coded to preserve branding and aesthetic appeal when the user's device preferences are set to "Dark Mode". This adds considerable value for user's who suffer from light sensitivity, migraines and certain visual disturbances, as well as those who simply wish to browse in low-light environments. For more on this, [see Accessibility below](#accessibility).  
     
+### 404 Error Handling  
+  <img src="assets/images/read-me-images/404.png" alt="The text on the 404 page reads, 'Feeling Lost? The page you were looking for doesn't exist. Go Home, Fido!' with the words 'Go Home' linking to the homepage." width="70%" height="auto">  
+In the event that a user attempts to visit a page that doesn't exist (for example, in the case of a typo or broken link), a custom 404 page will be shown. The page directs the user back to the homepage where they should be able to navigate with ease.  
+  
 ### Responsive Design  
   *Overview of World of Whippets Home Page (via [ami.responsivedesign.is](http://ami.responsivedesign.is))*   
  <img src="assets/images/read-me-images/homepage-am-i-responsive-sidebyside.png" alt="Screenshot of the World of Whippets Home Page being viewed on ami.responsivedesign.is in both dark and light modes." width="90%" height="auto">   
