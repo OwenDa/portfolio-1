@@ -15,7 +15,7 @@
     + [Adopt Page](#adopt-page)
     + [Forms](#forms)
     + [Dark Mode](#dark-mode)
-    + [404 Error Handling](#404)
+    + [404 Error Handling](#404-error-handling)
     + [Responsive Design](#responsive-design)
 4. [Testing](#testing)
     + [Validation](#validation)
@@ -58,7 +58,7 @@ Create a website which offers an introduction to whippets and other sighthounds,
 ### User Stories  
   
 **As a site owner, I want to...**  
-1. Convey sufficient information to make readers curious and eager to learn more about sighhound breeds.  
+1. Convey sufficient information to make readers curious and eager to learn more about sighthound breeds.  
 2. Reduce obstacles to sighthound adoption.  
 3. Increase the public's general awareness of the whippet breed and the variety found among sighthound breeds.  
 4. Convert user-curiosity to clicks through to shelters, increasing the chances of successful adoption.  
@@ -119,7 +119,7 @@ A shadow effect creates the impression that the cards are raised above the backg
 These effects are repeated for the card layout used on [the site's Adopt page](https://owenda.github.io/portfolio-1/adopt) and further elaborated upon in the next section. Follow-on information also includes a call-to-action link to Adopt page.
   
 ### Adopt Page  
-  <img src="assets/images/read-me-images/full-page-adopt.png" alt="A full page overview of the World of Whippets Adopt page." width="70%" height="auto">  
+  <img src="assets/images/read-me-images/full-page-adopt.png" alt="A full-page overview of the World of Whippets Adopt page." width="70%" height="auto">  
 
 This page is headed by a suitably expressive image and makes use of the card-style presentation to summarise contact details for a selection of animal shelters. Each card contains a different image above the name of an animal shelter with an icon indicating the name can be clicked to visit an external link which opens in a new window.  
   
@@ -142,18 +142,26 @@ Each page ends with a newsletter sign-up form. The inputs on this form are all k
   
 This is also true of the form located on [the Contact page](https://owenda.github.io/portfolio-1/contact). In both cases, form validation is used to ensure data is entered before submission and that data is of the correct `type`.  
   
-  <img src="assets/images/read-me-images/full-page-contact.png" alt="A full page overview of the World of Whippets Contact page." width="70%" height="auto">  
+  <img src="assets/images/read-me-images/full-page-contact.png" alt="A full-page overview of the World of Whippets Contact page." width="70%" height="auto">  
   
 ### Dark Mode  
   <img src="assets/images/read-me-images/dark-mode-text-example.png" alt="The largest portion of text on the site is shown as it appears in dark mode" width="70%" height="auto">  
   
   Lower contrast styles have been coded to preserve branding and aesthetic appeal when the user's device preferences are set to "Dark Mode". This adds considerable value for user's who suffer from light sensitivity, migraines and certain visual disturbances, as well as those who simply wish to browse in low-light environments. For more on this, [see Accessibility below](#accessibility).  
+  
+  In addition to changes in text and background colour, dark mode styling reduces the opacity of images slightly to reduce contrast, and increases letter spacing for greater legibility. This was then taken into account when ensuring responsive design, as the letter spacing of each element varies slightly according to the user's dark mode preferences and this can affect positioning and breakpoints.
     
 ### 404 Error Handling  
   <img src="assets/images/read-me-images/404.png" alt="The text on the 404 page reads, 'Feeling Lost? The page you were looking for doesn't exist. Go Home, Fido!' with the words 'Go Home' linking to the homepage." width="70%" height="auto">  
+
 In the event that a user attempts to visit a page that doesn't exist (for example, in the case of a typo or broken link), a custom 404 page will be shown. The page directs the user back to the homepage where they should be able to navigate with ease.  
-  
-### Responsive Design  
+    
+This page is also fully responsive, reacts appropriately to Dark Mode preferences, and is given a score of 100 in all Lighthouse metrics except SEO (meta data having been removed in this instance). Both the HTML and CSS relating to this page were validated without error.   
+    
+  <img src="assets/images/read-me-images/404-lighthouse.png" alt="The text on the 404 page reads, 'Feeling Lost? The page you were looking for doesn't exist. Go Home, Fido!' with the words 'Go Home' linking to the homepage." width="70%" height="auto">  
+    
+    
+  ### Responsive Design  
   *Overview of World of Whippets Home Page (via [ami.responsivedesign.is](http://ami.responsivedesign.is))*   
  <img src="assets/images/read-me-images/homepage-am-i-responsive-sidebyside.png" alt="Screenshot of the World of Whippets Home Page being viewed on ami.responsivedesign.is in both dark and light modes." width="90%" height="auto">   
    
@@ -200,7 +208,7 @@ In the event that a user attempts to visit a page that doesn't exist (for exampl
   2. Functions such as form submission and form validation were manually tested by the developer and can be tested by submitting sample data.
   3. The developer manually tested to ensure elements such as navigation links, form inputs and so on can be navigated with the tab key.  
   4. Picture fall-backs were tested by opening pages in Google Chrome and inspecting the source. The expected result being that Chrome would display the AVIF file. This was then repeated in Microsoft Edge with the expectation being that Edge would display the fallback PNG/JPG file. There should be no discernable difference to the end-user. The expected result was achieved in each case.  
-  5. The site was also viewed on multiple physical devices, in addition to the emulated screensizes provided by Chrome's Dev Tools.
+  5. The site was also viewed on multiple physical devices, in addition to the emulated screen sizes provided by Chrome's Dev Tools.
   6. Additional manual tests were carried out as part of an Accessibility Audit. These are described in the following section ([jump to Accessibility](#accessibility)).  
     
   ### Testing Tools  
@@ -340,8 +348,8 @@ Click to expand.
 9. [GTMetrix](https://gtmetrix.com/), [PingDom](https://tools.pingdom.com), [Page Speed Insights](https://pagespeed.web.dev/) and [Lighthouse](https://developers.google.com/web/tools/lighthouse) were all used at various points to assess performance.  
 10. [W3C](https://www.w3.org/)'s [Markup Validation Service](https://validator.w3.org/) and [CSS Validation Service](https://jigsaw.w3.org/css-validator/) were used to validate all code.
 11. The website [Can I Use?](https://caniuse.com/?search=avif) was used to check browser support for certain features.
-12. Browswers Chrome (Google) and Edge (Microsoft) were used during development and testing. 
-13. Chrome extension [GoFullPage](https://chrome.google.com/webstore/detail/gofullpage-full-page-scre/fdpohaocaechififmbbbbbknoalclacl) was used to generate full page screenshots.
+12. Browsers Chrome (Google) and Edge (Microsoft) were used during development and testing. 
+13. Chrome extension [GoFullPage](https://chrome.google.com/webstore/detail/gofullpage-full-page-scre/fdpohaocaechififmbbbbbknoalclacl) was used to generate full-page screenshots.
 </details>
   
 ### Image Credits:

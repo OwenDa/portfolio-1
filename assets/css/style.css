@@ -588,10 +588,6 @@ input[type="submit"] {
         color: var(--mid-grey);
     }
 
-    .cta a:visited {
-        color: var(--light-grey);
-    }
-
     .hero-image, img, #logo {
         opacity: .6;
     }
