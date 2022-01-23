@@ -443,6 +443,25 @@ input[type="submit"] {
     padding: 0;
 }
 
+/* 404 Page Styles */
+#img-404 {
+    background: url("../images/adopt/floppy-eared-whippet.jpg") center center no-repeat;
+    background-size: cover;
+    background-position-x: 60%;
+    width: 100vw;
+    height: 600px;
+    position: relative;
+}
+#cover-text {
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 5%;
+    max-width: 220px;
+    position: absolute;
+    right: 100px;
+    top: 10px;
+    padding: 1rem .5rem 0 .5rem;
+}
+
 /* MEDIA QUERIES: .card-panel layouts per screen size */
 
  /* up to 2260px width */
@@ -522,6 +541,11 @@ input[type="submit"] {
 
     header {
         justify-content: center;
+    }
+    
+    #cover-text {
+        right: 10px;
+        top: 10px;
     }
 }
  /* Screens up to 500px wide */
