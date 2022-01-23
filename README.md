@@ -284,7 +284,9 @@ Images were optimised with the following workflow:
 
 Each of these steps was carried out with one individual image file initially and then tested. The steps were then carried out folder-by-folder within the project's file structure, with git commits at each stage. Alternative strategies were also trialled, however, this was ultimately determined to be the most efficient for the *World of Whippets* project.
 
-Note that some aspects of performance optimisation cannot be acted upon within the current environment, as per this [Stack Exchange discussion on GitHub cache policies](https://webapps.stackexchange.com/questions/119286/caching-assets-in-website-served-from-github-pages). Were the project to be developed further, the site's mobile performance in particular should be enhanced; this would become all the more important were more content and functions to be added.
+Note that some aspects of performance optimisation cannot be acted upon within the current environment, as per this [Stack Exchange discussion on GitHub cache policies](https://webapps.stackexchange.com/questions/119286/caching-assets-in-website-served-from-github-pages). Were the project to be developed further, the site's mobile performance in particular should be enhanced; this would become all the more important were more content and functions to be added.  
+  
+It is worth noting, however, that GT Metrix scores all three pages 100% for Performance and 94% for Structure, resulting in a GT Metrix grade of A.
    
 
 ## Deployment
